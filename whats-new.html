@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>Cloud Sync 的新增功能 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Cloud Sync 的新增功能 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloud-manager-sync/whats-new.html" />
+	<meta property="og:description" content="了解 Cloud Sync 中的新增功能。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloud-manager-sync/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="了解 Cloud Sync 中的新增功能。">
+  <meta name="keywords" content=" what"s new, features, new, release notes, enhancements, fixes"><!-- Icons -->
+  <link rel="icon" href="/zh-cn/cloud-manager-sync/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/cloud-manager-sync/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-sync/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-sync/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-sync/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-sync/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-sync/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-sync/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-sync/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-sync/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-cn/cloud-manager-sync/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-cn/cloud-manager-sync/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-sync/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-sync/css/tabbed-blocks.css" type="text/css">
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/zh-cn/cloud-manager-sync/css/product-family.css' type="text/css">
+  <script src='/zh-cn/cloud-manager-sync/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/cloud-manager-sync/js/na-search.js'></script><script src='/zh-cn/cloud-manager-sync/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-cn/cloud-manager-sync/js/na-utility.js'></script>
+  <script src='/zh-cn/cloud-manager-sync/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/zh-cn/cloud-manager-sync/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-cn/cloud-manager-sync/js/toc.js'></script>
+  <script src='/zh-cn/cloud-manager-sync/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/zh-cn/cloud-manager-sync/js/version-dropdown.js'></script>
+  <script src='/zh-cn/cloud-manager-sync/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/cloud-manager-sync/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/cloud-manager-sync/js/jszip.min.js'></script>
+  <script src='/zh-cn/cloud-manager-sync/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-sync/issues/new?body=Page%3A%20[Cloud Sync 的新增功能](https://docs.netapp.com/zh-cn/cloud-manager-sync/whats-new.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-sync/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-sync/blob/main/whats-new.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-sync/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-sync/images/article-sm.svg" class="github-icon" />提供者指南</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">产品和解决方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支持和培训</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">云中心</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社区</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">日志</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客户案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-cn/cloud-manager-sync/search.html"
+          data-type="widget" 
+          data-placeholder="搜索文档" 
+          data-no-results-found="未找到与 {query} 匹配的结果。" 
+          data-did-you-mean="搜索 {suggestion}。" 
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
+          data-results-found="找到 {hitCount} 个结果"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">简体中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/zh-cn/cloud-manager-sync/pdfs/fullsite-sidebar/Cloud_Sync_文档.pdf" >
+          <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-sync/pdfs/sidebar/发行说明.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>
+            发行说明
+          </a>
+          
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-cn/cloud-manager-sync/pdfs/pages/whats-new.pdf" >
+    <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-sync/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>
+            入门
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-sync/pdfs/sidebar/安装数据代理.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>
+            安装数据代理
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-sync/pdfs/sidebar/使用_Cloud_Sync.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>
+            使用 Cloud Sync
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-sync/pdfs/sidebar/在源和目标之间同步数据.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>
+            在源和目标之间同步数据
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-sync/pdfs/sidebar/概念.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>
+            概念
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-sync/pdfs/sidebar/知识和支持.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>
+            知识和支持
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-cn/cloud-manager-sync/images/pdf-zip.png" width="16" height="16"/>
+      <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
+        所有 Cloud Manager 文档
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/index.html">
+        云同步文档
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 发行说明</div>
+      </a>
+      <ul><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/whats-new.html">
+        新增功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/reference-limitations.html">
+        限制
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 入门</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/concept-cloud-sync.html">
+        了解云同步
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-quick-start.html">
+        快速入门
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/reference-supported-relationships.html">
+        查看支持的同步关系
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/reference-requirements.html">
+        准备源和目标
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/reference-networking.html">
+        准备网络连接
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安装数据代理</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-installing-aws.html">
+        在 AWS 中安装
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-installing-azure.html">
+        在 Azure 中安装
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-installing-gcp.html">
+        在 Google Cloud 中安装
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-installing-linux.html">
+        在 Linux 主机上安装
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用 Cloud Sync</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 在源和目标之间同步数据</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-creating-relationships.html">
+        创建同步关系
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-copying-acls.html">
+        从 SMB 共享复制 ACL
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-nfs-encryption.html">
+        对传输中的 NFS 数据进行加密
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-external-vault.html">
+        使用 HashiCorp Vault 中的机密
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-licensing.html">
+        设置许可
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-managing-relationships.html">
+        管理同步关系
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-managing-data-brokers.html">
+        管理数据代理
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-managing-reports.html">
+        查看报告以调整您的配置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-uninstalling.html">
+        卸载数据代理
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/api-sync.html">
+        使用 REST API 实现自动化
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 概念</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/concept-licensing.html">
+        许可
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/concept-privacy.html">
+        数据隐私
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/faq-sync.html">
+        常见问题解答
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 知识和支持</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-support-registration.html">
+        注册以获得支持
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/task-get-help.html">
+        获取帮助
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/legal-notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/zh-cn/cloud/">云文档</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-cn/cloud-manager-sync/">Cloud&nbsp;Sync</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Cloud Sync 的新增功能</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-04-01 19:16:12 +0000">04/01/2022</time>
+    
+  
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>了解 Cloud Sync 中的新增功能。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2022-年-3-月-3-日">2022 年 3 月 3 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="在信息板中排序">在信息板中排序</h3>
+<div class="paragraph">
+<p>现在，您可以按同步关系名称对信息板进行排序。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-sync-sort.png" alt="显示信息板中提供的按名称排序选项的屏幕截图。"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="增强了-data-sense-集成功能">增强了 Data sense 集成功能</h3>
+<div class="paragraph">
+<p>在上一版本中，我们引入了 Cloud Sync 与 Cloud Data sense 的集成。在此更新中，我们简化了创建同步关系的过程，从而增强了集成能力。从 Cloud Data sense 启动数据同步后，所有源信息都包含在一个步骤中，只需输入几个关键详细信息即可。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-sync-data-sense.png" alt="一个屏幕截图，显示直接从 Cloud Data sense 启动新同步后显示的 &quot;Data sense Integration&quot; 页面。"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2022-年-2-月-6-日">2022 年 2 月 6 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="数据代理组的增强功能">数据代理组的增强功能</h3>
+<div class="paragraph">
+<p>我们通过强调数据代理 _groups_来 改变您与数据代理的交互方式。</p>
+</div>
+<div class="paragraph">
+<p>例如，在创建新的同步关系时，您可以选择要用于该关系的数据代理 <em>group</em> ，而不是特定的数据代理。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-sync-select-data-broker-group.png" alt="Sync Relationship 向导的屏幕截图，其中显示了数据代理组选择。"></span></p>
+</div>
+<div class="paragraph">
+<p>在 * 管理数据代理 * 选项卡中，我们还会显示数据代理组正在管理的同步关系的数量。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-sync-group-relationships.png" alt="&quot; 管理数据代理 &quot; 页面的屏幕截图，其中显示了数据代理组以及有关该组的详细信息，包括其管理的关系数。"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="下载-pdf-报告">下载 PDF 报告</h3>
+<div class="paragraph">
+<p>现在，您可以下载报告的 PDF 。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-managing-reports.html">"了解报告"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2022-年-1-月-2-日">2022 年 1 月 2 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="新的框同步关系">新的框同步关系</h3>
+<div class="paragraph">
+<p>支持两种新的同步关系：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Azure NetApp Files 对应的方框</p>
+</li>
+<li>
+<p>Amazon FSX for ONTAP 对应的框</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="reference-supported-relationships.html">"查看支持的同步关系列表"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="关系名称">关系名称</h3>
+<div class="paragraph">
+<p>现在，您可以为每个同步关系提供一个有意义的名称，以便更轻松地确定每个关系的用途。您可以在创建关系时以及之后的任何时间添加此名称。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-sync-relationship-edit-name.png" alt="同步关系的屏幕截图，显示关系名称旁边的编辑按钮。"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s3-专用链路">S3 专用链路</h3>
+<div class="paragraph">
+<p>在与 Amazon S3 同步数据时，您可以选择是否使用 S3 专用链路。当数据代理将数据从源复制到目标时，它将通过专用链路。</p>
+</div>
+<div class="paragraph">
+<p>请注意，与数据代理关联的 IAM 角色需要以下权限才能使用此功能：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"ec2:DescribeVpcEndpoints"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>此权限会自动添加到您创建的任何新数据代理中。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="glacier-即时检索">Glacier 即时检索</h3>
+<div class="paragraph">
+<p>现在，如果 Amazon S3 是同步关系中的目标，您可以选择 _Glacier 即时检索 _ 存储类。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="从对象存储到-smb-共享的-acl">从对象存储到 SMB 共享的 ACL</h3>
+<div class="paragraph">
+<p>现在， Cloud Sync 支持将 ACL 从对象存储复制到 SMB 共享。以前，我们仅支持将 ACL 从 SMB 共享复制到对象存储。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sftp-到-s3">SFTP 到 S3</h3>
+<div class="paragraph">
+<p>现在，可以在用户界面中创建从 SFTP 到 Amazon S3 的同步关系。此同步关系以前仅支持 API 。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="表视图增强功能">表视图增强功能</h3>
+<div class="paragraph">
+<p>我们重新设计了信息板上的表视图，以便于使用。如果单击 * 更多信息 * ， Cloud Sync 将筛选信息板，以显示有关该特定关系的更多信息。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-sync-table.png" alt="信息板中表视图的屏幕截图。"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="支持-jarkarta-地区">支持 Jarkarta 地区</h3>
+<div class="paragraph">
+<p>Cloud Sync 现在支持在 AWS 亚太地区（雅加达）部署数据代理。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-11-月-28-日">2021 年 11 月 28 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="从-smb-到对象存储的-acl">从 SMB 到对象存储的 ACL</h3>
+<div class="paragraph">
+<p>现在，在设置从源 SMB 共享到对象存储的同步关系时， Cloud Sync 可以复制访问控制列表（ ACL ）（ ONTAP S3 除外）。</p>
+</div>
+<div class="paragraph">
+<p>Cloud Sync 不支持将 ACL 从对象存储复制到 SMB 共享。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-copying-acls.html">"了解如何从 SMB 共享复制 ACL"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="更新许可证">更新许可证</h3>
+<div class="paragraph">
+<p>现在，您可以更新已扩展的 Cloud Sync 许可证。</p>
+</div>
+<div class="paragraph">
+<p>如果您延长了从 NetApp 购买的 Cloud Sync 许可证，则可以重新添加此许可证以刷新到期日期。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-licensing.html#update-a-license">"了解如何更新许可证"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="更新框凭据">更新框凭据</h3>
+<div class="paragraph">
+<p>现在，您可以更新现有同步关系的 Box 凭据。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-managing-relationships.html">"了解如何更新凭据"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-10-月-31-日">2021 年 10 月 31 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="盒装支持">盒装支持</h3>
+<div class="paragraph">
+<p>现在， Cloud Sync 用户界面中提供了盒式支持预览功能。</p>
+</div>
+<div class="paragraph">
+<p>Box 可以是多种类型的同步关系中的源或目标。 <a href="reference-supported-relationships.html">"查看支持的同步关系列表"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="创建日期设置">创建日期设置</h3>
+<div class="paragraph">
+<p>如果 SMB 服务器是源服务器，则可以使用名为 <em>Date Created</em> 的新同步关系设置来同步在特定日期之后，特定日期之前或在特定时间范围之间创建的文件。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-managing-relationships.html">"了解有关 Cloud Sync 设置的更多信息"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-10-月-4-日">2021 年 10 月 4 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="额外的箱体支持">额外的箱体支持</h3>
+<div class="paragraph">
+<p>Cloud Sync 现在支持的其他同步关系 <a href="https://www.box.com/home" target="_blank" rel="noopener">"框中"</a> 使用 Cloud Sync API 时：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon S3 收箱</p>
+</li>
+<li>
+<p>IBM Cloud Object Storage to Box</p>
+</li>
+<li>
+<p>StorageGRID 到框</p>
+</li>
+<li>
+<p>NFS 服务器的复选框</p>
+</li>
+<li>
+<p>SMB 服务器</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="api-sync.html">"了解如何使用 API 设置同步关系"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="报告-sftp-路径">报告 SFTP 路径</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>您现在可以： <a href="task-managing-reports.html">"创建报告"</a> 用于 SFTP 路径。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-9-月-2-日">2021 年 9 月 2 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="支持适用于-ontap-的-fsx">支持适用于 ONTAP 的 FSX</h3>
+<div class="paragraph">
+<p>现在，您可以将数据同步到 Amazon FSX for ONTAP 文件系统或从 Amazon FSX 文件系统同步数据。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/concept-fsx-aws.html" target="_blank" rel="noopener">"了解适用于 ONTAP 的 Amazon FSX"</a></p>
+</li>
+<li>
+<p><a href="reference-requirements.html">"查看支持的同步关系"</a></p>
+</li>
+<li>
+<p><a href="task-creating-relationships.html">"了解如何为适用于 ONTAP 的 Amazon FSX 创建同步关系"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-8-月-1-日">2021 年 8 月 1 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="更新凭据">更新凭据</h3>
+<div class="paragraph">
+<p>现在，您可以通过 Cloud Sync 使用现有同步关系中源或目标的最新凭据更新数据代理。</p>
+</div>
+<div class="paragraph">
+<p>如果安全策略要求您定期更新凭据，此增强功能将很有帮助。 <a href="task-managing-relationships.html">"了解如何更新凭据"</a>。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_update_credentials.png" alt="一个屏幕截图，显示同步关系页面上源或目标名称下的更新凭据选项。"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="对象存储目标的标记">对象存储目标的标记</h3>
+<div class="paragraph">
+<p>现在，在创建同步关系时，您可以在同步关系中向对象存储目标添加标记。</p>
+</div>
+<div class="paragraph">
+<p>Amazon S3 ， Azure Blob ， Google Cloud Storage ， IBM Cloud Object Storage 和 StorageGRID 支持添加标记。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_tags.png" alt="一个屏幕截图，显示了工作环境向导中的页面，通过该页面，您可以向关系中的对象存储目标添加关系标记。"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="支持-box">支持 Box</h3>
+<div class="paragraph">
+<p>Cloud Sync 现在支持 <a href="https://www.box.com/home" target="_blank" rel="noopener">"框中"</a> 在使用 Cloud Sync API 时，作为与 Amazon S3 ， StorageGRID 和 IBM 云对象存储的同步关系中的源。</p>
+</div>
+<div class="paragraph">
+<p><a href="api-sync.html">"了解如何使用 API 设置同步关系"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="用于-google-cloud-中数据代理的公有-ip">用于 Google Cloud 中数据代理的公有 IP</h3>
+<div class="paragraph">
+<p>在 Google Cloud 中部署数据代理时，您现在可以选择是为虚拟机实例启用还是禁用公有 IP 地址。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-installing-gcp.html">"了解如何在 Google Cloud 中部署数据代理"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="适用于-azure-netapp-files-的双协议卷">适用于 Azure NetApp Files 的双协议卷</h3>
+<div class="paragraph">
+<p>在为 Azure NetApp Files 选择源卷或目标卷时，无论您为同步关系选择哪种协议， Cloud Sync 现在都会显示双协议卷。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-7-月-7-日">2021 年 7 月 7 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="ontap-s3-存储和-google-云存储">ONTAP S3 存储和 Google 云存储</h3>
+<div class="paragraph">
+<p>现在， Cloud Sync 支持通过用户界面在 ONTAP S3 存储和 Google 云存储分段之间建立同步关系。</p>
+</div>
+<div class="paragraph">
+<p><a href="reference-supported-relationships.html">"查看支持的同步关系列表"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="对象元数据标记">对象元数据标记</h3>
+<div class="paragraph">
+<p>现在，在创建同步关系并启用设置时， Cloud Sync 可以在基于对象的存储之间复制对象元数据和标记。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-creating-relationships.html#settings">"了解有关 " 复制对象 " 设置的更多信息"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="支持-hashicorp-存储">支持 HashiCorp 存储</h3>
+<div class="paragraph">
+<p>现在，您可以通过使用 Google Cloud 服务帐户进行身份验证来设置数据代理，以便从外部 HashiCorp Vault 访问凭据。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-external-vault.html">"了解有关将 HashiCorp Vault 与数据代理结合使用的更多信息"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="为-s3-存储分段定义标记或元数据">为 S3 存储分段定义标记或元数据</h3>
+<div class="paragraph">
+<p>现在，在设置与 Amazon S3 存储分段的同步关系时，您可以通过同步关系向导定义要保存在目标 S3 存储分段中对象上的标记或元数据。</p>
+</div>
+<div class="paragraph">
+<p>标记选项以前是同步关系设置的一部分。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-6-月-7-日">2021 年 6 月 7 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="google-cloud-中的存储类">Google Cloud 中的存储类</h3>
+<div class="paragraph">
+<p>如果 Google Cloud Storage 存储分段是同步关系中的目标，您现在可以选择要使用的存储类。Cloud Sync 支持以下存储类：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>标准</p>
+</li>
+<li>
+<p>近线</p>
+</li>
+<li>
+<p>冷线</p>
+</li>
+<li>
+<p>归档</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-5-月-2-日">2021 年 5 月 2 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="报告中存在错误">报告中存在错误</h3>
+<div class="paragraph">
+<p>现在，您可以查看在报告中发现的错误，并且可以删除上一个报告或所有报告。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-managing-reports.html">"了解有关创建和查看报告以调整配置的更多信息"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="比较属性">比较属性</h3>
+<div class="paragraph">
+<p>现在，每个同步关系都有一个新的 * 比较依据 * 设置。</p>
+</div>
+<div class="paragraph">
+<p>通过此高级设置，您可以选择 Cloud Sync 在确定文件或目录是否已更改并应重新同步时是否应比较某些属性。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-managing-relationships.html#changing-the-settings-for-a-sync-relationship">"了解有关更改同步关系设置的更多信息"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2021-年-4-月-11-日">2021 年 4 月 11 日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="独立-cloud-sync-服务已停用">独立 Cloud Sync 服务已停用</h3>
+<div class="paragraph">
+<p>独立的 Cloud Sync 服务已停用。现在，您应直接从 Cloud Manager 访问 Cloud Sync ，在 Cloud Manager 中，所有相同的特性和功能均可用。</p>
+</div>
+<div class="paragraph">
+<p>登录到 Cloud Manager 后，您可以切换到顶部的 " 同步 " 选项卡并查看您的关系，就像以前一样。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="google-cloud-分段用于不同项目">Google Cloud 分段用于不同项目</h3>
+<div class="paragraph">
+<p>在设置同步关系时，如果您为数据代理的服务帐户提供了所需的权限，则可以从不同项目中的 Google Cloud 存储分段中进行选择。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-installing-gcp.html">"了解如何设置服务帐户"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="google-cloud-storage-和-s3-之间的元数据">Google Cloud Storage 和 S3 之间的元数据</h3>
+<div class="paragraph">
+<p>现在， Cloud Sync 可在 Google 云存储和 S3 提供程序（ AWS S3 ， StorageGRID 和 IBM 云对象存储）之间复制元数据。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="重新启动数据代理">重新启动数据代理</h3>
+<div class="paragraph">
+<p>现在，您可以从 Cloud Sync 重新启动数据代理。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_restart_data_broker.gif" alt="显示 &quot; 管理数据代理 &quot; 页面中的 &quot; 重新启动数据代理 &quot; 操作的屏幕截图。"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="未运行最新版本时的消息">未运行最新版本时的消息</h3>
+<div class="paragraph">
+<p>现在， Cloud Sync 可以确定数据代理何时未运行最新软件版本。此消息有助于确保您获得最新的特性和功能。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_warning.gif" alt="在信息板上查看数据代理时显示警告的屏幕截图。"></span></p>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
+  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/cloud-manager-sync/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/cloud-manager-sync/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/cloud-manager-sync/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/cloud-manager-sync/js/www-ntap.js'></script>
+    <script src='/zh-cn/cloud-manager-sync/js/tabbed-blocks.js'></script>
+  </body></html>
