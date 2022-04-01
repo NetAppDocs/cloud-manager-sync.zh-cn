@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task-uninstalling.html 
+keywords: uninstall, uninstall data broker, remove data broker 
+summary: 如果需要，请运行卸载脚本以删除安装数据代理时创建的数据代理以及软件包和目录。 
+---
+= 卸载数据代理
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果需要，请运行卸载脚本以删除数据代理以及在安装数据代理时创建的软件包和目录。
+
+.步骤
+. 登录到数据代理主机。
+. 更改为数据代理目录： ` /opt/netapp/databroker`
+. 运行以下命令：
++
+`chmod +x uninstaller-DataBroker.sh` ` ./uninstaller-DataBroker.sh`
+
+. 按 ‘y 确认卸载。
+

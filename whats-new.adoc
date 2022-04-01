@@ -1,0 +1,387 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: 了解 Cloud Sync 中的新增功能。 
+---
+= Cloud Sync 的新增功能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解 Cloud Sync 中的新增功能。
+
+
+
+== 2022 年 3 月 3 日
+
+
+
+=== 在信息板中排序
+
+现在，您可以按同步关系名称对信息板进行排序。
+
+image:screenshot-sync-sort.png["显示信息板中提供的按名称排序选项的屏幕截图。"]
+
+
+
+=== 增强了 Data sense 集成功能
+
+在上一版本中，我们引入了 Cloud Sync 与 Cloud Data sense 的集成。在此更新中，我们简化了创建同步关系的过程，从而增强了集成能力。从 Cloud Data sense 启动数据同步后，所有源信息都包含在一个步骤中，只需输入几个关键详细信息即可。
+
+image:screenshot-sync-data-sense.png["一个屏幕截图，显示直接从 Cloud Data sense 启动新同步后显示的 \"Data sense Integration\" 页面。"]
+
+
+
+== 2022 年 2 月 6 日
+
+
+
+=== 数据代理组的增强功能
+
+我们通过强调数据代理 _groups_来 改变您与数据代理的交互方式。
+
+例如，在创建新的同步关系时，您可以选择要用于该关系的数据代理 _group_ ，而不是特定的数据代理。
+
+image:screenshot-sync-select-data-broker-group.png["Sync Relationship 向导的屏幕截图，其中显示了数据代理组选择。"]
+
+在 * 管理数据代理 * 选项卡中，我们还会显示数据代理组正在管理的同步关系的数量。
+
+image:screenshot-sync-group-relationships.png["\" 管理数据代理 \" 页面的屏幕截图，其中显示了数据代理组以及有关该组的详细信息，包括其管理的关系数。"]
+
+
+
+=== 下载 PDF 报告
+
+现在，您可以下载报告的 PDF 。
+
+link:task-managing-reports.html["了解报告"]。
+
+
+
+== 2022 年 1 月 2 日
+
+
+
+=== 新的框同步关系
+
+支持两种新的同步关系：
+
+* Azure NetApp Files 对应的方框
+* Amazon FSX for ONTAP 对应的框
+
+
+link:reference-supported-relationships.html["查看支持的同步关系列表"]。
+
+
+
+=== 关系名称
+
+现在，您可以为每个同步关系提供一个有意义的名称，以便更轻松地确定每个关系的用途。您可以在创建关系时以及之后的任何时间添加此名称。
+
+image:screenshot-sync-relationship-edit-name.png["同步关系的屏幕截图，显示关系名称旁边的编辑按钮。"]
+
+
+
+=== S3 专用链路
+
+在与 Amazon S3 同步数据时，您可以选择是否使用 S3 专用链路。当数据代理将数据从源复制到目标时，它将通过专用链路。
+
+请注意，与数据代理关联的 IAM 角色需要以下权限才能使用此功能：
+
+[source, json]
+----
+"ec2:DescribeVpcEndpoints"
+----
+此权限会自动添加到您创建的任何新数据代理中。
+
+
+
+=== Glacier 即时检索
+
+现在，如果 Amazon S3 是同步关系中的目标，您可以选择 _Glacier 即时检索 _ 存储类。
+
+
+
+=== 从对象存储到 SMB 共享的 ACL
+
+现在， Cloud Sync 支持将 ACL 从对象存储复制到 SMB 共享。以前，我们仅支持将 ACL 从 SMB 共享复制到对象存储。
+
+
+
+=== SFTP 到 S3
+
+现在，可以在用户界面中创建从 SFTP 到 Amazon S3 的同步关系。此同步关系以前仅支持 API 。
+
+
+
+=== 表视图增强功能
+
+我们重新设计了信息板上的表视图，以便于使用。如果单击 * 更多信息 * ， Cloud Sync 将筛选信息板，以显示有关该特定关系的更多信息。
+
+image:screenshot-sync-table.png["信息板中表视图的屏幕截图。"]
+
+
+
+=== 支持 Jarkarta 地区
+
+Cloud Sync 现在支持在 AWS 亚太地区（雅加达）部署数据代理。
+
+
+
+== 2021 年 11 月 28 日
+
+
+
+=== 从 SMB 到对象存储的 ACL
+
+现在，在设置从源 SMB 共享到对象存储的同步关系时， Cloud Sync 可以复制访问控制列表（ ACL ）（ ONTAP S3 除外）。
+
+Cloud Sync 不支持将 ACL 从对象存储复制到 SMB 共享。
+
+link:task-copying-acls.html["了解如何从 SMB 共享复制 ACL"]。
+
+
+
+=== 更新许可证
+
+现在，您可以更新已扩展的 Cloud Sync 许可证。
+
+如果您延长了从 NetApp 购买的 Cloud Sync 许可证，则可以重新添加此许可证以刷新到期日期。
+
+link:task-licensing.html#update-a-license["了解如何更新许可证"]。
+
+
+
+=== 更新框凭据
+
+现在，您可以更新现有同步关系的 Box 凭据。
+
+link:task-managing-relationships.html["了解如何更新凭据"]。
+
+
+
+== 2021 年 10 月 31 日
+
+
+
+=== 盒装支持
+
+现在， Cloud Sync 用户界面中提供了盒式支持预览功能。
+
+Box 可以是多种类型的同步关系中的源或目标。 link:reference-supported-relationships.html["查看支持的同步关系列表"]。
+
+
+
+=== 创建日期设置
+
+如果 SMB 服务器是源服务器，则可以使用名为 _Date Created_ 的新同步关系设置来同步在特定日期之后，特定日期之前或在特定时间范围之间创建的文件。
+
+link:task-managing-relationships.html["了解有关 Cloud Sync 设置的更多信息"]。
+
+
+
+== 2021 年 10 月 4 日
+
+
+
+=== 额外的箱体支持
+
+Cloud Sync 现在支持的其他同步关系 https://www.box.com/home["框中"^] 使用 Cloud Sync API 时：
+
+* Amazon S3 收箱
+* IBM Cloud Object Storage to Box
+* StorageGRID 到框
+* NFS 服务器的复选框
+* SMB 服务器
+
+
+link:api-sync.html["了解如何使用 API 设置同步关系"]。
+
+
+
+=== 报告 SFTP 路径
+
+* 您现在可以： link:task-managing-reports.html["创建报告"] 用于 SFTP 路径。
+
+
+
+
+== 2021 年 9 月 2 日
+
+
+
+=== 支持适用于 ONTAP 的 FSX
+
+现在，您可以将数据同步到 Amazon FSX for ONTAP 文件系统或从 Amazon FSX 文件系统同步数据。
+
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/concept-fsx-aws.html["了解适用于 ONTAP 的 Amazon FSX"^]
+* link:reference-requirements.html["查看支持的同步关系"]
+* link:task-creating-relationships.html["了解如何为适用于 ONTAP 的 Amazon FSX 创建同步关系"]
+
+
+
+
+== 2021 年 8 月 1 日
+
+
+
+=== 更新凭据
+
+现在，您可以通过 Cloud Sync 使用现有同步关系中源或目标的最新凭据更新数据代理。
+
+如果安全策略要求您定期更新凭据，此增强功能将很有帮助。 link:task-managing-relationships.html["了解如何更新凭据"]。
+
+image:screenshot_sync_update_credentials.png["一个屏幕截图，显示同步关系页面上源或目标名称下的更新凭据选项。"]
+
+
+
+=== 对象存储目标的标记
+
+现在，在创建同步关系时，您可以在同步关系中向对象存储目标添加标记。
+
+Amazon S3 ， Azure Blob ， Google Cloud Storage ， IBM Cloud Object Storage 和 StorageGRID 支持添加标记。
+
+image:screenshot_sync_tags.png["一个屏幕截图，显示了工作环境向导中的页面，通过该页面，您可以向关系中的对象存储目标添加关系标记。"]
+
+
+
+=== 支持 Box
+
+Cloud Sync 现在支持 https://www.box.com/home["框中"^] 在使用 Cloud Sync API 时，作为与 Amazon S3 ， StorageGRID 和 IBM 云对象存储的同步关系中的源。
+
+link:api-sync.html["了解如何使用 API 设置同步关系"]。
+
+
+
+=== 用于 Google Cloud 中数据代理的公有 IP
+
+在 Google Cloud 中部署数据代理时，您现在可以选择是为虚拟机实例启用还是禁用公有 IP 地址。
+
+link:task-installing-gcp.html["了解如何在 Google Cloud 中部署数据代理"]。
+
+
+
+=== 适用于 Azure NetApp Files 的双协议卷
+
+在为 Azure NetApp Files 选择源卷或目标卷时，无论您为同步关系选择哪种协议， Cloud Sync 现在都会显示双协议卷。
+
+
+
+== 2021 年 7 月 7 日
+
+
+
+=== ONTAP S3 存储和 Google 云存储
+
+现在， Cloud Sync 支持通过用户界面在 ONTAP S3 存储和 Google 云存储分段之间建立同步关系。
+
+link:reference-supported-relationships.html["查看支持的同步关系列表"]。
+
+
+
+=== 对象元数据标记
+
+现在，在创建同步关系并启用设置时， Cloud Sync 可以在基于对象的存储之间复制对象元数据和标记。
+
+link:task-creating-relationships.html#settings["了解有关 " 复制对象 " 设置的更多信息"]。
+
+
+
+=== 支持 HashiCorp 存储
+
+现在，您可以通过使用 Google Cloud 服务帐户进行身份验证来设置数据代理，以便从外部 HashiCorp Vault 访问凭据。
+
+link:task-external-vault.html["了解有关将 HashiCorp Vault 与数据代理结合使用的更多信息"]。
+
+
+
+=== 为 S3 存储分段定义标记或元数据
+
+现在，在设置与 Amazon S3 存储分段的同步关系时，您可以通过同步关系向导定义要保存在目标 S3 存储分段中对象上的标记或元数据。
+
+标记选项以前是同步关系设置的一部分。
+
+
+
+== 2021 年 6 月 7 日
+
+
+
+=== Google Cloud 中的存储类
+
+如果 Google Cloud Storage 存储分段是同步关系中的目标，您现在可以选择要使用的存储类。Cloud Sync 支持以下存储类：
+
+* 标准
+* 近线
+* 冷线
+* 归档
+
+
+
+
+== 2021 年 5 月 2 日
+
+
+
+=== 报告中存在错误
+
+现在，您可以查看在报告中发现的错误，并且可以删除上一个报告或所有报告。
+
+link:task-managing-reports.html["了解有关创建和查看报告以调整配置的更多信息"]。
+
+
+
+=== 比较属性
+
+现在，每个同步关系都有一个新的 * 比较依据 * 设置。
+
+通过此高级设置，您可以选择 Cloud Sync 在确定文件或目录是否已更改并应重新同步时是否应比较某些属性。
+
+link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["了解有关更改同步关系设置的更多信息"]。
+
+
+
+== 2021 年 4 月 11 日
+
+
+
+=== 独立 Cloud Sync 服务已停用
+
+独立的 Cloud Sync 服务已停用。现在，您应直接从 Cloud Manager 访问 Cloud Sync ，在 Cloud Manager 中，所有相同的特性和功能均可用。
+
+登录到 Cloud Manager 后，您可以切换到顶部的 " 同步 " 选项卡并查看您的关系，就像以前一样。
+
+
+
+=== Google Cloud 分段用于不同项目
+
+在设置同步关系时，如果您为数据代理的服务帐户提供了所需的权限，则可以从不同项目中的 Google Cloud 存储分段中进行选择。
+
+link:task-installing-gcp.html["了解如何设置服务帐户"]。
+
+
+
+=== Google Cloud Storage 和 S3 之间的元数据
+
+现在， Cloud Sync 可在 Google 云存储和 S3 提供程序（ AWS S3 ， StorageGRID 和 IBM 云对象存储）之间复制元数据。
+
+
+
+=== 重新启动数据代理
+
+现在，您可以从 Cloud Sync 重新启动数据代理。
+
+image:screenshot_sync_restart_data_broker.gif["显示 \" 管理数据代理 \" 页面中的 \" 重新启动数据代理 \" 操作的屏幕截图。"]
+
+
+
+=== 未运行最新版本时的消息
+
+现在， Cloud Sync 可以确定数据代理何时未运行最新软件版本。此消息有助于确保您获得最新的特性和功能。
+
+image:screenshot_sync_warning.gif["在信息板上查看数据代理时显示警告的屏幕截图。"]

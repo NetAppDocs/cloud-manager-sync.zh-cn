@@ -1,0 +1,263 @@
+---
+sidebar: sidebar 
+permalink: task-external-vault.html 
+keywords: hashicorp, vault, credentials, secrets, API 
+summary: 创建需要 Amazon S3 ， Azure 或 Google Cloud 凭据的同步关系时，您需要通过 Cloud Sync 用户界面或 API 指定这些凭据。另一种方法是设置数据代理，以便直接从外部 HashiCorp Vault 访问凭据。 
+---
+= 设置数据代理组以使用外部 HashiCorp 存储
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+创建需要 Amazon S3 ， Azure 或 Google Cloud 凭据的同步关系时，您需要通过 Cloud Sync 用户界面或 API 指定这些凭据。另一种方法是设置数据代理组，以便直接从外部 HashiCorp 存储访问凭据（或 _sects_ ）。
+
+此功能通过 Cloud Sync API 提供支持，并且同步关系需要 Amazon S3 ， Azure 或 Google Cloud 凭据。
+
+[role="quick-margin-para"]
+通过设置 URL 来准备存储以向数据代理组提供凭据。存储中的机密 URL 必须以 _Creds_结尾 。
+
+[role="quick-margin-para"]
+通过修改组中每个数据代理的本地配置文件，使数据代理组做好准备，以便从外部存储提取凭据。
+
+[role="quick-margin-para"]
+设置完所有内容后，您可以发送 API 调用来创建同步关系，以使用存储获取密码。
+
+
+
+== 准备存储
+
+您需要为 Cloud Sync 提供存储中机密的 URL 。通过设置这些 URL 来准备存储。您需要为计划创建的同步关系中的每个源和目标的凭据设置 URL 。
+
+必须按如下所示设置 URL ：
+
+` /<path>/<RequestId>/<Endpoint-protocol>Creds`
+
+路径:: 密钥的前缀路径。这可以是您独有的任何值。
+请求 ID:: 需要生成的请求 ID 。创建同步关系时，您需要在 API POST 请求中的一个标题中提供 ID 。
+端点协议:: 定义的以下协议之一 https://api.cloudsync.netapp.com/docs/#/Relationships-v2/post_relationships_v2["在关系后 v2 文档中"^]： S3 ， Azure 或 GCP （每个都必须大写）。
+创建:: URL 必须以 _Creds_结尾 。
+
+
+
+
+==== 示例
+
+以下示例显示了指向机密的 URL 。
+
+源凭据的完整 URL 和路径示例:: http://example.vault.com:8200/my-path/all-secrets/hb312vdasr2/S3Creds
++
+--
+如示例中所示，前缀路径为 //my-path/all-sects/ ，请求 ID 为 _hb312vdasr2_ ，源端点为 S3 。
+
+--
+目标凭据的完整 URL 和路径示例:: http://example.vault.com:8200/my-path/all-secrets/n32hcbnejk2/AZURECreds
++
+--
+前缀路径为 //my-path/all-sections/_ ，请求 ID 为 _n32hcbnejk2_ ，目标端点为 Azure 。
+
+--
+
+
+
+
+== 正在准备数据代理组
+
+通过修改组中每个数据代理的本地配置文件，使数据代理组做好准备，以便从外部存储提取凭据。
+
+.步骤
+. 通过 SSH 连接到组中的数据代理。
+. 编辑 /opt/netapp/databroker/config 中的 local.json 文件。
+. 将 enable 设置为 * true * ，并按如下所示在 _external-积分 .hashashicorp_ 下设置配置参数字段：
++
+enabled::
++
+--
+** 有效值： true/false
+** 类型：布尔值
+** 默认值： false
+** true ：数据代理从您自己的外部 HashiCorp Vault 获取机密
+** false ：数据代理将凭据存储在其本地存储中
+
+
+--
+url::
++
+--
+** 键入： string
+** value ：外部存储的 URL
+
+
+--
+path::
++
+--
+** 键入： string
+** value ：使用凭据将路径前缀为密钥
+
+
+--
+拒绝 - 未授权::
++
+--
+** 确定是否希望数据代理拒绝未经授权的外部存储
+** 类型：布尔值
+** 默认值： false
+
+
+--
+auth-method::
++
+--
+** 数据代理从外部存储访问凭据时应使用的身份验证方法
+** 键入： string
+** 有效值： "AWS-iam"/"role-app"/"GCP-iam"
+
+
+--
+角色名称::
++
+--
+** 键入： string
+** 您的角色名称（如果您使用 AWS-iam 或 GCP-iam ）
+
+
+--
+Secretid 和 rootid::
++
+--
+** type ： string （如果使用 app-role ）
+
+
+--
+命名空间::
++
+--
+** 键入： string
+** 命名空间（如果需要，则为 X-Vault-Namespace 标头）
+
+
+--
+
+
+. 对组中的任何其他数据代理重复上述步骤。
+
+
+
+
+=== AWS 角色身份验证示例
+
+[source, json]
+----
+{
+          “external-integrations”: {
+                  “hashicorp”: {
+                         “enabled”: true,
+                         “url”: “https://example.vault.com:8200”,
+                         “path”: ““my-path/all-secrets”,
+                         “reject-unauthorized”: false,
+                         “auth-method”: “aws-role”,
+                         “aws-role”: {
+                               “role-name”: “my-role”
+                         }
+                }
+       }
+}
+----
+
+
+=== GCP-iam 身份验证示例
+
+[source, json]
+----
+{
+"external-integrations": {
+    "hashicorp": {
+      "enabled": true,
+      "url": http://ip-10-20-30-55.ec2.internal:8200,
+      "path": "v1/secret",
+      "namespace": "",
+      "reject-unauthorized": true,
+      "auth-method": "gcp-iam",
+      "aws-iam": {
+        "role-name": ""
+      },
+      "app-role": {
+        "root_id": "",
+        "secret_id": ""
+      },
+"gcp-iam": {
+          "role-name": "my-iam-role"
+      }
+    }
+  }
+}
+----
+
+
+=== 使用 GCP-iam 身份验证时设置权限
+
+如果您使用的是 _gcp-iam_ 身份验证方法，则数据代理必须具有以下 GCP 权限：
+
+[source, yaml]
+----
+- iam.serviceAccounts.signJwt
+----
+link:task-installing-gcp.html#permissions-required-for-the-service-account["详细了解数据代理的 GCP 权限要求"]。
+
+
+
+== 使用存储中的密钥创建新的同步关系
+
+设置完所有内容后，您可以发送 API 调用来创建同步关系，以使用存储获取密码。
+
+使用 Cloud Sync REST API 发布关系。
+
+....
+Headers:
+Authorization: Bearer <user-token>
+Content-Type: application/json
+x-account-id: <accountid>
+x-netapp-external-request-id-src: request ID as part of path for source credentials
+x-netapp-external-request-id-trg: request ID as part of path for target credentials
+Body: post relationship v2 body
+....
+* 要获取用户令牌和 Cloud Central 帐户 ID ， link:api-sync.html["请参见文档中的此页面"^]。
+* 为您的后关系构建实体， https://api.cloudsync.netapp.com/docs/#/Relationships-v2/post_relationships_v2["请参见 relationships-v2 API 调用"^]。
+
+
+
+
+=== 示例
+
+POST 请求示例：
+
+[source, json]
+----
+url: https://api.cloudsync.netapp.com/api/relationships-v2
+headers:
+"x-account-id": "CS-SasdW"
+"x-netapp-external-request-id-src": "hb312vdasr2"
+"Content-Type": "application/json"
+"Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik…"
+Body:
+{
+"dataBrokerId": "5e6e111d578dtyuu1555sa60",
+"source": {
+        "protocol": "s3",
+        "s3": {
+                "provider": "sgws",
+                "host": "1.1.1.1",
+                "port": "443",
+                "bucket": "my-source"
+     },
+"target": {
+        "protocol": "s3",
+        "s3": {
+                "bucket": "my-target-bucket"
+        }
+    }
+}
+----

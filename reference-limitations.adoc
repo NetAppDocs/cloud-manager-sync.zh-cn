@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, china, unsupported regions 
+summary: 已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。 
+---
+= 限制
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。
+
+* 中国不支持云同步。
+* 除中国外、以下地区不支持 Cloud Sync 数据代理：
++
+** Azure US gov 酒店
+** Azure US DoD
+
+
+

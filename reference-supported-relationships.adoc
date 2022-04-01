@@ -1,0 +1,312 @@
+---
+sidebar: sidebar 
+permalink: reference-supported-relationships.html 
+keywords: supported sync relationships, support, supported target, supported source 
+summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同步关系。您应该先了解支持的关系，然后再开始。 
+---
+= 支持的同步关系
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 Cloud Sync 可以将数据从源同步到目标。这称为同步关系。您应该先了解支持的关系，然后再开始。
+
+[cols="20,25"]
+|===
+| 源位置 | 支持的目标位置 
+
+
+| Amazon EFS  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| 适用于 ONTAP 的 Amazon FSX  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| Amazon S3  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* 盒装 ^2 ， 3^
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| Azure Blob  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| Azure NetApp Files  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| 盒 ^2^  a| 
+* Amazon S3
+* IBM 云对象存储
+* NFS 服务器
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| Cloud Volumes ONTAP  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| Cloud Volumes Service  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| Google Cloud 存储  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* ONTAP S3 存储
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| IBM 云对象存储  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* 盒装 ^2 ， 3^
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| NFS 服务器  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| 内部 ONTAP 集群  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| ONTAP S3 存储  a| 
+* Google Cloud 存储
+* SMB 服务器
+* StorageGRID
+* ONTAP S3 存储
+
+
+
+
+| SFTP ^1^ | S3 
+
+
+| SMB 服务器  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* ONTAP S3 存储
+* SMB 服务器
+* StorageGRID
+
+
+
+
+| StorageGRID  a| 
+* Amazon EFS
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+* Azure Blob
+* Azure NetApp Files
+* 盒装 ^2 ， 3^
+* Cloud Volumes ONTAP
+* Cloud Volumes Service
+* Google Cloud 存储
+* IBM 云对象存储
+* NFS 服务器
+* 内部 ONTAP 集群
+* ONTAP S3 存储
+* SMB 服务器
+* StorageGRID
+
+
+|===
+注释：
+
+. 仅使用 Cloud Sync API 支持与此源 / 目标的同步关系。
+. 预览版可提供盒式支持。
+. 当 BLOB 容器是目标容器时，可以选择特定的 Azure Blob 存储层：
++
+** 热存储
+** 冷却存储
+
+
+. 【存储类】当 Amazon S3 为目标时，您可以选择特定的 S3 存储类：
++
+** 标准（这是默认类）
+** Intelligent-Hierarchy
+** 标准—不经常访问
+** 一个 ZONE 不常访问
+** 冰河
+** Glacier 深度存档
+
+
+. 当 Google Cloud Storage 存储分段为目标时，您可以选择特定的存储类：
++
+** 标准
+** 近线
+** 冷线
+** 归档
+
+
+

@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start.html 
+keywords: quick start, overview, deploying, getting started, get started, signing up, free trial 
+summary: Cloud Sync 服务入门包括几个步骤。 
+---
+= Cloud Sync 快速入门
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Cloud Sync 服务入门包括几个步骤。
+
+[role="quick-margin-para"]
+验证您的源和目标是否受支持和设置。最重要的要求是验证数据代理组与源位置和目标位置之间的连接。 link:reference-requirements.html["了解更多信息。"]。
+
+[role="quick-margin-para"]
+NetApp 数据代理软件会将数据从源同步到目标（称为 _sync relationship_ ）。您可以在 AWS 、 Azure 、 Google Cloud 平台或内部运行数据代理。一个由一个或多个数据代理组成的数据代理组需要通过端口 443 建立出站 Internet 连接，以便能够与 Cloud Sync 服务进行通信并联系其他一些服务和存储库。 link:reference-networking.html#networking-endpoints["查看端点列表。"]。
+
+[role="quick-margin-para"]
+在创建同步关系时， Cloud Sync 会指导您完成安装过程，此时您可以在云中部署数据代理或为自己的 Linux 主机下载安装脚本。
+
+* link:task-installing-aws.html["查看 AWS 安装"]
+* link:task-installing-azure.html["查看 Azure 安装"]
+* link:task-installing-gcp.html["查看 Google Cloud 安装"]
+* link:task-installing-linux.html["查看 Linux 主机安装"]
+
+
+[role="quick-margin-para"]
+登录到 https://cloudmanager.netapp.com/["云管理器"^]，单击 * 同步 * ，然后拖放您为源和目标选择的内容。按照提示完成设置。 link:task-creating-relationships.html["了解更多信息。"]。
+
+[role="quick-margin-para"]
+从 AWS 或 Azure 订阅以按需购买或每年支付。或直接从 NetApp 购买许可证。只需转到 Cloud Sync 中的“许可证设置”页面即可进行设置。 link:task-licensing.html["了解更多信息。"]。

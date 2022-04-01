@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: concept-privacy.html 
+keywords: privacy, data privacy, credentials, access to credentials, hashicorp vault 
+summary: NetApp 无法访问您在使用 Cloud Sync 服务时提供的任何凭据。凭据直接存储在驻留在网络中的数据代理计算机上。 
+---
+= 数据隐私
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 无法访问您在使用 Cloud Sync 服务时提供的任何凭据。凭据直接存储在驻留在网络中的数据代理计算机上。
+
+根据您选择的配置、在创建新关系时， Cloud Sync 可能会提示您输入凭据。例如，在设置包含 SMB 服务器的关系时，或者在 AWS 中部署数据代理时。
+
+这些凭据始终直接保存到数据代理本身。数据代理驻留在您网络中的计算机上，无论该计算机位于内部还是位于您的云帐户中。NetApp 从不能获得凭据。
+
+凭据在数据代理计算机上使用 HashiCorp Vault 进行本地加密。
