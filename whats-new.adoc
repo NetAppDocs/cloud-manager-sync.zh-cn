@@ -32,11 +32,13 @@ summary: 了解 Cloud Sync 中的新增功能。
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task_sync_managing_data_brokers.html["了解如何管理数据代理组"]。
 
-* 现在，您可以筛选 " 同步信息板 " 的内容，以便更轻松地查找与特定状态匹配的同步关系。例如，您可以筛选状态为失败的同步关系
-+
-image:screenshot-sync-filter.png["显示信息板顶部按同步筛选状态选项的屏幕截图。"]
 
 
+=== 信息板筛选器
+
+现在，您可以筛选 " 同步信息板 " 的内容，以便更轻松地查找与特定状态匹配的同步关系。例如，您可以筛选状态为失败的同步关系
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png["显示信息板顶部按同步筛选状态选项的屏幕截图。"]
 
 
 
@@ -48,7 +50,7 @@ image:screenshot-sync-filter.png["显示信息板顶部按同步筛选状态选�
 
 现在，您可以按同步关系名称对信息板进行排序。
 
-image:screenshot-sync-sort.png["显示信息板中提供的按名称排序选项的屏幕截图。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-sort.png["显示信息板中提供的按名称排序选项的屏幕截图。"]
 
 
 
@@ -56,7 +58,7 @@ image:screenshot-sync-sort.png["显示信息板中提供的按名称排序选项
 
 在上一版本中，我们引入了 Cloud Sync 与 Cloud Data sense 的集成。在此更新中，我们简化了创建同步关系的过程，从而增强了集成能力。从 Cloud Data sense 启动数据同步后，所有源信息都包含在一个步骤中，只需输入几个关键详细信息即可。
 
-image:screenshot-sync-data-sense.png["一个屏幕截图，显示直接从 Cloud Data sense 启动新同步后显示的 \"Data sense Integration\" 页面。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png["一个屏幕截图，显示直接从 Cloud Data sense 启动新同步后显示的 \"Data sense Integration\" 页面。"]
 
 
 
@@ -70,11 +72,11 @@ image:screenshot-sync-data-sense.png["一个屏幕截图，显示直接从 Cloud
 
 例如，在创建新的同步关系时，您可以选择要用于该关系的数据代理 _group_ ，而不是特定的数据代理。
 
-image:screenshot-sync-select-data-broker-group.png["Sync Relationship 向导的屏幕截图，其中显示了数据代理组选择。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-select-data-broker-group.png["Sync Relationship 向导的屏幕截图，其中显示了数据代理组选择。"]
 
 在 * 管理数据代理 * 选项卡中，我们还会显示数据代理组正在管理的同步关系的数量。
 
-image:screenshot-sync-group-relationships.png["\" 管理数据代理 \" 页面的屏幕截图，其中显示了数据代理组以及有关该组的详细信息，包括其管理的关系数。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-group-relationships.png["\" 管理数据代理 \" 页面的屏幕截图，其中显示了数据代理组以及有关该组的详细信息，包括其管理的关系数。"]
 
 
 

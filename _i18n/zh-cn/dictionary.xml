@@ -485,21 +485,16 @@
   <block id="d8247e494d1e03bac9b29cc7ea4c0eca" category="section-title">在信息板中排序</block>
   <block id="32ee2f2004d5d2f19f46a8909b1df5a6" category="paragraph">现在，您可以按同步关系名称对信息板进行排序。</block>
   <block id="c964823b8160043978055759ce39dd87" category="inline-image-macro">显示信息板中提供的按名称排序选项的屏幕截图。</block>
-  <block id="4c05f3b2ac911e7eb3be399ccbd6d236" category="paragraph"><block ref="4c05f3b2ac911e7eb3be399ccbd6d236" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aabbe3d8eb6db922cc7867bbc1068867" category="section-title">增强了 Data sense 集成功能</block>
   <block id="2931385a1afec19638d47ebab7744410" category="paragraph">在上一版本中，我们引入了 Cloud Sync 与 Cloud Data sense 的集成。在此更新中，我们简化了创建同步关系的过程，从而增强了集成能力。从 Cloud Data sense 启动数据同步后，所有源信息都包含在一个步骤中，只需输入几个关键详细信息即可。</block>
-  <block id="d40f781bdc03053a9bde791bfc977a84" category="section-title">2022 年 2 月 6 日</block>
   <block id="b173d47e232436d0170127aec6c62d25" category="section-title">数据代理组的增强功能</block>
   <block id="2362e2192964b2a1132ee3c33127e6ec" category="paragraph">我们通过强调数据代理 _groups_来 改变您与数据代理的交互方式。</block>
   <block id="009030a7e855d0f36e42bdac812520b4" category="paragraph">例如，在创建新的同步关系时，您可以选择要用于该关系的数据代理 _group_ ，而不是特定的数据代理。</block>
   <block id="435847457b00dd1f91120adf3d0e24aa" category="inline-image-macro">Sync Relationship 向导的屏幕截图，其中显示了数据代理组选择。</block>
-  <block id="e781903d5b4496684ba5bd448544c498" category="paragraph"><block ref="e781903d5b4496684ba5bd448544c498" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9eb0238485945ad5d6512b69445e72c6" category="paragraph">在 * 管理数据代理 * 选项卡中，我们还会显示数据代理组正在管理的同步关系的数量。</block>
   <block id="4f1d2e29d6b816360bccc567294cac53" category="inline-image-macro">" 管理数据代理 " 页面的屏幕截图，其中显示了数据代理组以及有关该组的详细信息，包括其管理的关系数。</block>
-  <block id="005ce66517c857d10ae46724b7a65f99" category="paragraph"><block ref="005ce66517c857d10ae46724b7a65f99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="81a424c5c67f920d35d770215956f31f" category="section-title">下载 PDF 报告</block>
   <block id="983eab96e054cfaaef2e1cc070a5ac0d" category="paragraph">现在，您可以下载报告的 PDF 。</block>
-  <block id="be5d8939c40c8e2f992c86c6df281553" category="section-title">2022 年 1 月 2 日</block>
   <block id="639448a9d08cad0082353310edaa5321" category="section-title">新的框同步关系</block>
   <block id="27225cf5b84e571fe2412826220eb977" category="paragraph">支持两种新的同步关系：</block>
   <block id="731506a28bbbe117bfa19db92d90ca5c" category="list-text">Azure NetApp Files 对应的方框</block>
@@ -526,7 +521,6 @@
   <block id="464bce8418108e11fbc67663fc64376a" category="paragraph"><block ref="464bce8418108e11fbc67663fc64376a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="55692a3e08e518d1aa7c38db6b703907" category="section-title">支持 Jarkarta 地区</block>
   <block id="45b9ee2b76fb4176580b8178578194d7" category="paragraph">Cloud Sync 现在支持在 AWS 亚太地区（雅加达）部署数据代理。</block>
-  <block id="e7c5ad171298e38494ee7665c2b581e3" category="section-title">2021 年 11 月 28 日</block>
   <block id="a6601df3ba629cfc8f5b8498c912f070" category="section-title">从 SMB 到对象存储的 ACL</block>
   <block id="1576934ad839cae6442e5711b0174c62" category="paragraph">现在，在设置从源 SMB 共享到对象存储的同步关系时， Cloud Sync 可以复制访问控制列表（ ACL ）（ ONTAP S3 除外）。</block>
   <block id="ae6ae72085365fbcb40301d1e9deb095" category="paragraph">Cloud Sync 不支持将 ACL 从对象存储复制到 SMB 共享。</block>
@@ -541,7 +535,6 @@
   <block id="9b441f4afbb53f4c8d5b7fc8bc6b9301" category="paragraph">现在，您可以更新现有同步关系的 Box 凭据。</block>
   <block id="b4ef038c5650fac60f2434cad75645e5" category="inline-link-macro">了解如何更新凭据</block>
   <block id="1430696d750a8ec1ef00c88e37adce56" category="paragraph"><block ref="c5951b046d7bb866003e61513f2ace56" category="inline-link-macro-rx"></block>。</block>
-  <block id="f113b79a4bb13850776b0f197bc567c4" category="section-title">2021 年 10 月 31 日</block>
   <block id="96fd4ea1dc0f0a328044f7cd301e0e96" category="section-title">盒装支持</block>
   <block id="13594d78d6e2f27d5702750f1460057a" category="paragraph">现在， Cloud Sync 用户界面中提供了盒式支持预览功能。</block>
   <block id="6de4b558d7125595a2a968a5719784bb" category="paragraph">Box 可以是多种类型的同步关系中的源或目标。 <block ref="22efe00007987c46f8bce57edbae4cc7" category="inline-link-macro-rx"></block>。</block>
@@ -549,7 +542,6 @@
   <block id="1f6641af34885ff35179793592203ed5" category="paragraph">如果 SMB 服务器是源服务器，则可以使用名为 _Date Created_ 的新同步关系设置来同步在特定日期之后，特定日期之前或在特定时间范围之间创建的文件。</block>
   <block id="99f249829ba1a20da04c914e121c35ac" category="inline-link-macro">了解有关 Cloud Sync 设置的更多信息</block>
   <block id="ab6a2ca8d8806cc410e997d6fea799d6" category="paragraph"><block ref="23fc5ff6b0baeec068bf033034a47b8f" category="inline-link-macro-rx"></block>。</block>
-  <block id="4b3686191205784c468b3d8c8118c352" category="section-title">2021 年 10 月 4 日</block>
   <block id="938c54d632bedbd381821c5fb6fd460a" category="section-title">额外的箱体支持</block>
   <block id="3cfce651e667ab85486dd42a8185f98a" category="inline-link">框中</block>
   <block id="6ff04a667e19dcffdc5a82df04e78cf8" category="paragraph">Cloud Sync 现在支持的其他同步关系<block ref="1d1338d7e0be4d47b97d1993db9c1c26" category="inline-link-rx"></block> 使用 Cloud Sync API 时：</block>
@@ -563,7 +555,6 @@
   <block id="6c8b30b65f91400bf1fb8a0756ebcdf9" category="section-title">报告 SFTP 路径</block>
   <block id="2bb6ea77ea0a96907eed898beae35936" category="inline-link-macro">创建报告</block>
   <block id="525458a4a32a835db6e691248c00176f" category="list-text">您现在可以： <block ref="b9f66aa7863826e8b10a53e044cd803f" category="inline-link-macro-rx"></block> 用于 SFTP 路径。</block>
-  <block id="50121596f417c9051d2198082fb7350d" category="section-title">2021 年 9 月 2 日</block>
   <block id="0c69dd608d3bb18f6d88caa7ab56df36" category="section-title">支持适用于 ONTAP 的 FSX</block>
   <block id="548eba8d98d9c7383a12d30e135e8723" category="paragraph">现在，您可以将数据同步到 Amazon FSX for ONTAP 文件系统或从 Amazon FSX 文件系统同步数据。</block>
   <block id="43ece0944414298a29b4d72bc56373f1" category="inline-link">了解适用于 ONTAP 的 Amazon FSX</block>
@@ -572,7 +563,6 @@
   <block id="6b816f21b0dbce67e44499fa4246a4b1" category="list-text"><block ref="6b816f21b0dbce67e44499fa4246a4b1" category="inline-link-macro-rx"></block></block>
   <block id="de0f377f70e8f82779d4f2819fe79524" category="inline-link-macro">了解如何为适用于 ONTAP 的 Amazon FSX 创建同步关系</block>
   <block id="6eeb7613e7dd358cd7d64171aefffacb" category="list-text"><block ref="6eeb7613e7dd358cd7d64171aefffacb" category="inline-link-macro-rx"></block></block>
-  <block id="1d78ed65443f56c002fecbf279ec5bda" category="section-title">2021 年 8 月 1 日</block>
   <block id="ee2ee700615c2258dc72b2287ee4ebea" category="section-title">更新凭据</block>
   <block id="10916fe90fddba40f307b87455df0d43" category="paragraph">现在，您可以通过 Cloud Sync 使用现有同步关系中源或目标的最新凭据更新数据代理。</block>
   <block id="9029933217c98ee4428382d350c27dc1" category="paragraph">如果安全策略要求您定期更新凭据，此增强功能将很有帮助。 <block ref="c5951b046d7bb866003e61513f2ace56" category="inline-link-macro-rx"></block>。</block>
@@ -591,7 +581,6 @@
   <block id="70bb29af13a454705d2eb69111e9cd4b" category="paragraph"><block ref="e1b5c734fd82a70f6e2915db4f9db388" category="inline-link-macro-rx"></block>。</block>
   <block id="0473cc01cb7ede3e33ff790d71d46adb" category="section-title">适用于 Azure NetApp Files 的双协议卷</block>
   <block id="f6ff20b10ee7246a6e26b7bd236d95ed" category="paragraph">在为 Azure NetApp Files 选择源卷或目标卷时，无论您为同步关系选择哪种协议， Cloud Sync 现在都会显示双协议卷。</block>
-  <block id="4ec78699b23bbdb93ac30d4bf4a1abbb" category="section-title">2021 年 7 月 7 日</block>
   <block id="1b8a57ad056f64c33ae5aec3cb409ea7" category="section-title">ONTAP S3 存储和 Google 云存储</block>
   <block id="4a00f3605aaf233a2a3c762f0341510d" category="paragraph">现在， Cloud Sync 支持通过用户界面在 ONTAP S3 存储和 Google 云存储分段之间建立同步关系。</block>
   <block id="dab08495e7e75494d74b30ace62406bc" category="section-title">对象元数据标记</block>
@@ -605,14 +594,12 @@
   <block id="27617f73d731cd506fba810d9f1164db" category="section-title">为 S3 存储分段定义标记或元数据</block>
   <block id="0f904c09e27e9f5d37676635340cc4c2" category="paragraph">现在，在设置与 Amazon S3 存储分段的同步关系时，您可以通过同步关系向导定义要保存在目标 S3 存储分段中对象上的标记或元数据。</block>
   <block id="da88d9f1a708d9c69fa46136fc909a2f" category="paragraph">标记选项以前是同步关系设置的一部分。</block>
-  <block id="aa15625896e08f29a6c04891c5db0408" category="section-title">2021 年 6 月 7 日</block>
   <block id="4e2d7954a5437555e0ea565449462369" category="section-title">Google Cloud 中的存储类</block>
   <block id="d06702d5f77f411d220f00532c68b3a2" category="paragraph">如果 Google Cloud Storage 存储分段是同步关系中的目标，您现在可以选择要使用的存储类。Cloud Sync 支持以下存储类：</block>
   <block id="eb6d8ae6f20283755b339c0dc273988b" category="list-text">标准</block>
   <block id="aba972473e7cea22067fcd1e1e01bcd1" category="list-text">近线</block>
   <block id="1d5397c0580f85c400887096d12c133e" category="list-text">冷线</block>
   <block id="e727b00944f81e1d0a95c12886ac4641" category="list-text">归档</block>
-  <block id="1dcdea8288477a395a1dd25bdade55b3" category="section-title">2021 年 5 月 2 日</block>
   <block id="a799c3c6d3ba327c38fba0f1f65444d7" category="section-title">报告中存在错误</block>
   <block id="9b4bbcf0970a413ed02cbeb6d95b2199" category="paragraph">现在，您可以查看在报告中发现的错误，并且可以删除上一个报告或所有报告。</block>
   <block id="c3242f3c1f06c404c7b019a4b882d935" category="inline-link-macro">了解有关创建和查看报告以调整配置的更多信息</block>
@@ -1400,7 +1387,6 @@
   <block id="4caa7a774039d94c9779b6e68946536b" category="list-text">单击操作菜单并选择 * 删除组 * 。</block>
   <block id="a6f5a3bf619c49f582460d312e4f123a" category="list-text">要进行确认，请输入组名称，然后单击 * 删除组 * 。</block>
   <block id="33c715478bea68511b75dc844219e343" category="paragraph">Cloud Sync 将删除数据代理并删除组。</block>
-  <block id="5de04ab2445218da916465ab33983c22" category="section-title">2022 年 4 月 3 日</block>
   <block id="33c34b75ae4154295ed3cdeeccb3fd6a" category="section-title">数据代理组增强功能</block>
   <block id="9e85c5ace2120c3600ae07824bd6d1a9" category="paragraph">我们对数据代理组进行了多项增强：</block>
   <block id="d1dcf627a81e370076956675cf99d2b9" category="list-text">现在，您可以将数据代理移动到新的或现有的组。</block>
@@ -1410,8 +1396,6 @@
   <block id="d7d0bf852f1595f61d55c11980f7910f" category="paragraph"><block ref="0c28ef170c985c7b9baf79aa516f5e52" category="inline-link-rx"></block>。</block>
   <block id="c81f80b5e3a2c8dfe8c2f908cbbfc2fa" category="list-text">现在，您可以筛选 " 同步信息板 " 的内容，以便更轻松地查找与特定状态匹配的同步关系。例如，您可以筛选状态为失败的同步关系</block>
   <block id="ab31e38babe6f59fc89d1a7f8d3ea2c9" category="inline-image-macro">显示信息板顶部按同步筛选状态选项的屏幕截图。</block>
-  <block id="b5f5f707aed7c770f3699444b445aaa3" category="paragraph"><block ref="b5f5f707aed7c770f3699444b445aaa3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="acc0c89d65623eb8cc3f21faae13aa5c" category="section-title">2022 年 3 月 3 日</block>
   <block id="b8573b8d6cb0195fa946927c3aa36397" category="inline-link">了解有关报告的更多信息</block>
   <block id="913d3279d6ca39c6bd290fac85314961" category="paragraph"><block ref="9ba5aa88e2b271505b32ed12efb1883e" category="inline-link-rx"></block>。</block>
   <block id="a274f268e46a9fcc5130af66046ef57b" category="list-text">文件服务器必须允许数据代理主机通过所需端口访问导出。</block>
@@ -1421,4 +1405,22 @@
   <block id="fb25385dee5b2553b1a83a1854995508" category="list-text">139 TCP</block>
   <block id="40f52eda7c4d926e57d399fdaa36e568" category="list-text">445 TCP</block>
   <block id="e52eaa6f5efc038192dc18339c053ab3" category="list-text">137-138 UDP</block>
+  <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
+  <block id="16f353b4ac76ea7e1a66509c3863e0f9" category="section-title">信息板筛选器</block>
+  <block id="9a086a6121a0ffa4e8986b7ce540eece" category="paragraph"><block ref="9a086a6121a0ffa4e8986b7ce540eece" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">2022 年 3 月 3 日</block>
+  <block id="ce7541e1d7efdf7278fdc4d1fc9736b1" category="paragraph"><block ref="ce7541e1d7efdf7278fdc4d1fc9736b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7415479c879eb3f5804ebd25ea733e7" category="paragraph"><block ref="b7415479c879eb3f5804ebd25ea733e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5c46bd67ae4b5c23f9c243b5f396c088" category="section-title">2022 年 2 月 6 日</block>
+  <block id="1010f6ebb8a63e17d664e622c2299691" category="paragraph"><block ref="1010f6ebb8a63e17d664e622c2299691" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b5012dcabc22fc10384141ed3b715897" category="paragraph"><block ref="b5012dcabc22fc10384141ed3b715897" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f8cd23c769793fc26c0573678e2a2d07" category="section-title">2022 年 1 月 2 日</block>
+  <block id="f61163b681442ac500a8018c87241770" category="section-title">2021 年 11 月 28 日</block>
+  <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
+  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021 年 10 月 4 日</block>
+  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
+  <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021 年 8 月 1 日</block>
+  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
+  <block id="945fb8f32f58d1cc36cb9f1e9e4c6fe5" category="section-title">2021 年 6 月 7 日</block>
+  <block id="824b76af9549cb14fd2443aa485afb15" category="section-title">2021 年 5 月 2 日</block>
 </blocks>
