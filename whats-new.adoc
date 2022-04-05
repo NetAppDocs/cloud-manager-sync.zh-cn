@@ -17,6 +17,29 @@ summary: 了解 Cloud Sync 中的新增功能。
 
 
 
+== 2022 年 4 月 3 日
+
+
+
+=== 数据代理组增强功能
+
+我们对数据代理组进行了多项增强：
+
+* 现在，您可以将数据代理移动到新的或现有的组。
+* 现在，您可以更新数据代理的代理配置。
+* 最后，您还可以删除数据代理组。
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task_sync_managing_data_brokers.html["了解如何管理数据代理组"]。
+
+* 现在，您可以筛选 " 同步信息板 " 的内容，以便更轻松地查找与特定状态匹配的同步关系。例如，您可以筛选状态为失败的同步关系
++
+image:screenshot-sync-filter.png["显示信息板顶部按同步筛选状态选项的屏幕截图。"]
+
+
+
+
+
 == 2022 年 3 月 3 日
 
 
@@ -59,7 +82,7 @@ image:screenshot-sync-group-relationships.png["\" 管理数据代理 \" 页面�
 
 现在，您可以下载报告的 PDF 。
 
-link:task-managing-reports.html["了解报告"]。
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["了解有关报告的更多信息"]。
 
 
 

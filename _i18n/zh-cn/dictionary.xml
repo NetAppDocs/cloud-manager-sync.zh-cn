@@ -21,9 +21,6 @@
   <block id="4e475c34f329c78e3aa3ab2a63cb63db" category="summary">数据代理将数据从源位置同步到目标位置。您创建的每个同步关系都需要一个数据代理。通过向组添加新数据代理，查看有关数据代理的信息等来管理数据代理。</block>
   <block id="efdd49f1066bc795a31111d98cfa5ddf" category="doc">管理数据代理组</block>
   <block id="e1191d25bbec84b8a1ba37471b41611f" category="paragraph">数据代理组将数据从源位置同步到目标位置。对于您创建的每个同步关系，组中至少需要一个数据代理。通过向组中添加新数据代理，查看组信息等来管理数据代理组。</block>
-  <block id="46a5597bf1d0bb6131699943c8eb538a" category="section-title">数据代理组</block>
-  <block id="0e1c5ff9805bc11c4b7d6e87af0fa93e" category="paragraph">将数据代理分组在一起有助于提高同步关系的性能。</block>
-  <block id="ca1c342e097dd2b8e437080a7f458f9f" category="section-title">确定组中数据代理的数量</block>
   <block id="31361c8d27e70295df2bfa32fdeeb659" category="inline-link-macro">详细了解如何确定何时需要多个数据代理</block>
   <block id="0a134fa70f4699a5c8408ed138b7162b" category="paragraph">在许多情况下、单个数据代理可以满足同步关系的性能要求。如果不支持，您可以通过向组添加其他数据代理来提高同步性能。但是，您应该首先检查可能影响同步性能的其他因素。 <block ref="871c8177954bc9fc0961cd3c58102f39" category="inline-link-macro-rx"></block>。</block>
   <block id="0a7fa5ebd880718dbd4c644fda59fb38" category="section-title">组可以管理多个关系</block>
@@ -33,9 +30,6 @@
   <block id="2da4190bfc656abd88eb058d61341d99" category="list-text">关系 2 由数据代理组 B 管理</block>
   <block id="1204be74d45a4ac703dc67fd6864e991" category="list-text">关系 3 由数据代理组 A 管理</block>
   <block id="2002e7315a54bdc5f69ae33f895b3361" category="paragraph">您希望提高关系 1 的性能，以便向数据代理组 A 添加新的数据代理由于组 A 还管理同步关系 3 ，因此关系的同步性能也会自动提高。</block>
-  <block id="4d1b0dd2ac6040283149ee4593c99dda" category="section-title">仅限新的数据代理</block>
-  <block id="6f94d3194bf6ce158093332092d916d9" category="paragraph">您只能向组添加新的数据代理。您不能将现有数据代理添加到组中。</block>
-  <block id="ecc57856a780d684b0fe0d4f158af18e" category="section-title">添加新的数据代理</block>
   <block id="8b0de93ef762269210bc193874b3d679" category="paragraph">可以通过多种方法创建新的数据代理：</block>
   <block id="3a3d1b7e5044442dcfbd5cd464cc3e74" category="list-text">创建新同步关系时</block>
   <block id="d55c5ae4dbd0da4961b63d579f9712fd" category="inline-link-macro">了解如何在创建同步关系时创建新的数据代理</block>
@@ -62,7 +56,6 @@
   <block id="b20c8730a010d433fedb7241d0a0335a" category="list-title">在现有组中创建数据代理的步骤</block>
   <block id="9c129f9a970d427b507541a4c3a7e53a" category="list-text">单击操作菜单并选择 * 添加数据代理 * 。</block>
   <block id="b65b4c1a581a43f257ad99ae84281816" category="inline-image-macro">组中每个数据代理都可以使用的操作菜单的屏幕截图。</block>
-  <block id="849e308ca762ea472ddd09c38adfbd1d" category="paragraph"><block ref="849e308ca762ea472ddd09c38adfbd1d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b86abc18838bbcc96f4aba5f9e7400b2" category="list-text">按照提示在组中创建数据代理。</block>
   <block id="301ebdf8067a213d5a55c65fbb488290" category="section-title">安全建议</block>
   <block id="cbf7ac8dbbee47678fd563919556b802" category="paragraph">为了确保数据代理计算机的安全性， NetApp 建议执行以下操作：</block>
@@ -110,7 +103,6 @@
   <block id="7bab02d802b38084f68f9bb810f1ca53" category="list-text">将鼠标悬停在上 <block ref="a74720392297d66ac1ab9a90296912c9" category="inline-image-macro-rx" type="image"></block> 图标以查看失败原因。</block>
   <block id="cb1293ddc33121613d8b44ddf7bddebc" category="list-text">更正问题描述。</block>
   <block id="4c23f2743e95cade04a6991678e7c813" category="paragraph">例如，如果数据代理脱机，您可能只需重新启动它，或者如果初始部署失败，您可能需要删除数据代理。</block>
-  <block id="637cba6455e9f6fc12a3c205c16f44fc" category="section-title">为数据代理组定义统一配置</block>
   <block id="b913043c4767c72e8bbb3ed88c33dd15" category="paragraph">如果同步关系在同步过程中遇到错误，统一数据代理组的并发性有助于减少同步错误的数量。请注意，更改组的配置可能会降低传输速度，从而影响性能。</block>
   <block id="e0341128a5853714165581951816b70b" category="paragraph">建议不要自行更改配置。您应咨询 NetApp ，了解何时更改配置以及如何更改配置。</block>
   <block id="6fea4f8d81c041ddb786f1edf604f6b0" category="list-text">单击 * 管理数据代理 * 。</block>
@@ -490,7 +482,6 @@
   <block id="858b9413ffbdb9049bf9b696f0ea8392" category="paragraph">Cloud Sync 开始创建新的同步关系。完成后，单击 * 在信息板中查看 * 以查看有关新关系的详细信息。</block>
   <block id="31e5f37358c44c0e0f7f219f24cc5f81" category="summary">了解 Cloud Sync 中的新增功能。</block>
   <block id="e18bd0330d937c2c7c10048bf3ce8366" category="doc">Cloud Sync 的新增功能</block>
-  <block id="42b5df730d6616520195746bafa566eb" category="section-title">2022 年 3 月 3 日</block>
   <block id="d8247e494d1e03bac9b29cc7ea4c0eca" category="section-title">在信息板中排序</block>
   <block id="32ee2f2004d5d2f19f46a8909b1df5a6" category="paragraph">现在，您可以按同步关系名称对信息板进行排序。</block>
   <block id="c964823b8160043978055759ce39dd87" category="inline-image-macro">显示信息板中提供的按名称排序选项的屏幕截图。</block>
@@ -508,8 +499,6 @@
   <block id="005ce66517c857d10ae46724b7a65f99" category="paragraph"><block ref="005ce66517c857d10ae46724b7a65f99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="81a424c5c67f920d35d770215956f31f" category="section-title">下载 PDF 报告</block>
   <block id="983eab96e054cfaaef2e1cc070a5ac0d" category="paragraph">现在，您可以下载报告的 PDF 。</block>
-  <block id="30a7332ec8bb1b2ebc76a3d132b0ddff" category="inline-link-macro">了解报告</block>
-  <block id="de4dcb6fc7c1b34f094c79b4afa83800" category="paragraph"><block ref="22d4e0c70893ffebbef3d597df59a723" category="inline-link-macro-rx"></block>。</block>
   <block id="be5d8939c40c8e2f992c86c6df281553" category="section-title">2022 年 1 月 2 日</block>
   <block id="639448a9d08cad0082353310edaa5321" category="section-title">新的框同步关系</block>
   <block id="27225cf5b84e571fe2412826220eb977" category="paragraph">支持两种新的同步关系：</block>
@@ -1181,7 +1170,6 @@
   <block id="52e561223aa4d60195ec48c81021c098" category="paragraph">如果同步关系的源是 SnapMirror 目标（只读），则 " 读 / 列表 " 权限足以将数据从源同步到目标。</block>
   <block id="096c99dcba4f443f3faf0add6cd69220" category="section-title">NFS 服务器要求</block>
   <block id="5cc2d35f0ee4edef8750c640e1b018c1" category="list-text">NFS 服务器可以是 NetApp 系统或非 NetApp 系统。</block>
-  <block id="3a29221f42b8cb307e588a8ca61bbec2" category="list-text">文件服务器必须允许数据代理主机访问导出。</block>
   <block id="e07694fd13f56a99d495063f6ca17334" category="list-text">支持 NFS 版本 3 、 4.0 、 4.1 和 4.2 。</block>
   <block id="dadb092f6add17b9a5eb4af5c4505c14" category="paragraph">必须在服务器上启用所需的版本。</block>
   <block id="036a01e342cbcc1e478008b78551a134" category="list-text">如果要从 ONTAP 系统同步 NFS 数据，请确保已启用对 SVM NFS 导出列表的访问（已启用 vserver nfs modify -vserver _svm_name_ -showmount ）。</block>
@@ -1382,4 +1370,55 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+  <block id="ca08c96498d9894503ce9e420ef6d436" category="section-title">数据代理组的工作原理</block>
+  <block id="247ec76f61baa3930d7923ec714c899c" category="paragraph">一个数据代理组可以包含一个或多个数据代理。将数据代理分组在一起有助于提高同步关系的性能。</block>
+  <block id="c73532751f2f234c7f0d9ca93cb4b15b" category="section-title">组中数据代理的数量</block>
+  <block id="e0efdad08a998dee7544ebf8d6b3b89e" category="section-title">将新数据代理添加到组</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">开始之前</block>
+  <block id="2de4e7eeead88f538b8cd1733c76e3a6" category="paragraph"><block ref="2de4e7eeead88f538b8cd1733c76e3a6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="895f6ee3fb48280aa9fdce9f1c30aa6d" category="section-title">设置统一配置</block>
+  <block id="811611d56e45c2c5ad32ef90181ce8a8" category="section-title">在组之间移动数据代理</block>
+  <block id="ce906694cadabac093e4c5fe069bcb4c" category="paragraph">如果需要提高目标数据代理组的性能，请将数据代理从一个组移动到另一个组。</block>
+  <block id="cc3da3df5b4ab9b2be7d5806e4025606" category="paragraph">例如，如果某个数据代理不再管理同步关系，您可以轻松地将其移动到另一个管理同步关系的组。</block>
+  <block id="41b2fa65bd2051073cfc172ed6d944a7" category="list-text">如果某个数据代理组正在管理同步关系，并且该组中只有一个数据代理，则无法将该数据代理移动到另一个组。</block>
+  <block id="3e0e9fccf9e35eb1a06e1c36bf885a2f" category="list-text">您不能将数据代理移入或移出管理加密同步关系的组。</block>
+  <block id="db90b652da494a61a1c01e5e5aef4315" category="list-text">您无法移动当前正在部署的数据代理。</block>
+  <block id="dda0c1f183c1fccf92fffcd171b23e21" category="list-text">单击数据代理的操作菜单，然后选择 * 移动数据代理 * 。</block>
+  <block id="89c00533408de9d6ad1e44640394b315" category="paragraph"><block ref="89c00533408de9d6ad1e44640394b315" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cfd516ad37b4df608c16efb09914e1fc" category="list-text">创建新的数据代理组或选择现有数据代理组。</block>
+  <block id="55d7c27d3127f4494c358b638f4fc6ff" category="list-text">单击 * 移动 * 。</block>
+  <block id="2daf9e8be8307f8316675b55ccbe21d9" category="paragraph">Cloud Sync 会将数据代理移动到新的或现有的数据代理组。如果上一个组中没有其他数据代理，则 Cloud Sync 会将其删除。</block>
+  <block id="dbe6fde8cda66c70d52ac330a93b530e" category="section-title">更新代理配置</block>
+  <block id="f646f203e1dead2c4f220dc5943aa058" category="paragraph">通过添加有关新代理配置的详细信息或编辑现有代理配置来更新数据代理的代理配置。</block>
+  <block id="550a2db189a4eb50771eeb91357d19cd" category="list-text">单击数据代理的操作菜单，然后选择 * 编辑代理配置 * 。</block>
+  <block id="85a4803f127edd3390d65e41d8aaad98" category="list-text">指定有关代理的详细信息：主机名，端口号，用户名和密码。</block>
+  <block id="04252e4e5460971d7f33943bd841f366" category="list-text">单击 * 更新 * 。</block>
+  <block id="dc7ca5465298da0988fdbdf96a6140c1" category="paragraph">Cloud Sync 会更新数据代理，以使用代理配置进行 Internet 访问。</block>
+  <block id="2bbd7c4d9d525b0e8675bf3663179545" category="section-title">删除数据代理组</block>
+  <block id="5b0d2474104e897ec00992476cc0328c" category="paragraph">如果某个数据代理组不再管理任何同步关系，您可以删除该组，从而从 Cloud Sync 中删除所有数据代理。</block>
+  <block id="ebdb7bb51a167f7be93fdd2b43189d84" category="paragraph">Cloud Sync 删除的数据代理仅会从 Cloud Sync 的记录中删除。您需要从云提供商和任何其他云资源中手动删除数据代理实例。</block>
+  <block id="4caa7a774039d94c9779b6e68946536b" category="list-text">单击操作菜单并选择 * 删除组 * 。</block>
+  <block id="a6f5a3bf619c49f582460d312e4f123a" category="list-text">要进行确认，请输入组名称，然后单击 * 删除组 * 。</block>
+  <block id="33c715478bea68511b75dc844219e343" category="paragraph">Cloud Sync 将删除数据代理并删除组。</block>
+  <block id="5de04ab2445218da916465ab33983c22" category="section-title">2022 年 4 月 3 日</block>
+  <block id="33c34b75ae4154295ed3cdeeccb3fd6a" category="section-title">数据代理组增强功能</block>
+  <block id="9e85c5ace2120c3600ae07824bd6d1a9" category="paragraph">我们对数据代理组进行了多项增强：</block>
+  <block id="d1dcf627a81e370076956675cf99d2b9" category="list-text">现在，您可以将数据代理移动到新的或现有的组。</block>
+  <block id="1a89df8c409f135e6e7efd8c0600dba6" category="list-text">现在，您可以更新数据代理的代理配置。</block>
+  <block id="71dba184b83141e962cb89e88563baf3" category="list-text">最后，您还可以删除数据代理组。</block>
+  <block id="fe914f8d9b65e6214843cbd5f42cddc8" category="inline-link">了解如何管理数据代理组</block>
+  <block id="d7d0bf852f1595f61d55c11980f7910f" category="paragraph"><block ref="0c28ef170c985c7b9baf79aa516f5e52" category="inline-link-rx"></block>。</block>
+  <block id="c81f80b5e3a2c8dfe8c2f908cbbfc2fa" category="list-text">现在，您可以筛选 " 同步信息板 " 的内容，以便更轻松地查找与特定状态匹配的同步关系。例如，您可以筛选状态为失败的同步关系</block>
+  <block id="ab31e38babe6f59fc89d1a7f8d3ea2c9" category="inline-image-macro">显示信息板顶部按同步筛选状态选项的屏幕截图。</block>
+  <block id="b5f5f707aed7c770f3699444b445aaa3" category="paragraph"><block ref="b5f5f707aed7c770f3699444b445aaa3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="acc0c89d65623eb8cc3f21faae13aa5c" category="section-title">2022 年 3 月 3 日</block>
+  <block id="b8573b8d6cb0195fa946927c3aa36397" category="inline-link">了解有关报告的更多信息</block>
+  <block id="913d3279d6ca39c6bd290fac85314961" category="paragraph"><block ref="9ba5aa88e2b271505b32ed12efb1883e" category="inline-link-rx"></block>。</block>
+  <block id="a274f268e46a9fcc5130af66046ef57b" category="list-text">文件服务器必须允许数据代理主机通过所需端口访问导出。</block>
+  <block id="9ea2f732b81b5cda8d4d5edea63e6877" category="list-text">111 TCP/UDP</block>
+  <block id="1b1cd21da8907e21f7b884f90e6cbed4" category="list-text">2049 TCP/UDP</block>
+  <block id="a67c199c0fc4d687a53739e1d60b9add" category="list-text">5555 TCP/UDP</block>
+  <block id="fb25385dee5b2553b1a83a1854995508" category="list-text">139 TCP</block>
+  <block id="40f52eda7c4d926e57d399fdaa36e568" category="list-text">445 TCP</block>
+  <block id="e52eaa6f5efc038192dc18339c053ab3" category="list-text">137-138 UDP</block>
 </blocks>
