@@ -224,7 +224,7 @@ x-netapp-external-request-id-src: request ID as part of path for source credenti
 x-netapp-external-request-id-trg: request ID as part of path for target credentials
 Body: post relationship v2 body
 ....
-* 要获取用户令牌和 Cloud Central 帐户 ID ， link:api-sync.html["请参见文档中的此页面"^]。
+* 要获取用户令牌和 Cloud Central 帐户 ID ， link:api-sync.html["请参见文档中的此页面"]。
 * 为您的后关系构建实体， https://api.cloudsync.netapp.com/docs/#/Relationships-v2/post_relationships_v2["请参见 relationships-v2 API 调用"^]。
 
 

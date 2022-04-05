@@ -32,8 +32,8 @@ summary: 创建同步关系时、 Cloud Sync 服务会将文件从源复制到�
 .步骤
 . 创建或发现工作环境。
 +
-** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/task-creating-fsx-working-environment.html["创建适用于 ONTAP 的 Amazon FSX 工作环境"^]
-** https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["设置和发现 Azure NetApp Files"^]
+** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["创建适用于 ONTAP 的 Amazon FSX 工作环境"^]
+** https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["设置和发现 Azure NetApp Files"^]
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 AWS 中启动 Cloud Volumes ONTAP"^]
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Azure 中启动 Cloud Volumes ONTAP"^]
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在 Google Cloud 中启动 Cloud Volumes ONTAP"^]
@@ -97,7 +97,7 @@ NOTE: 如果要同步 NFS 服务器上的多个目录、则必须在完成后创
 . 在 * 分段设置 * 页面上，设置分段：
 +
 ** 选择是否启用 S3 存储分段加密，然后选择 AWS KMS 密钥，输入 KMS 密钥的 ARN 或选择 AES-256 加密。
-** 选择 S3 存储类。 link:reference-requirements.html#storage-classes["查看支持的存储类。"]。
+** 选择 S3 存储类。 link:reference-supported-relationships.html#storage-classes["查看支持的存储类。"]。
 +
 image:screenshot_bucket_setup.gif["此屏幕截图显示了 \" 存储分段设置 \" 页面，您可以通过该页面选择 \" 是 \" 或 \" 否 \" 进行加密，并为已同步数据选择特定的 S3 存储类。"]
 

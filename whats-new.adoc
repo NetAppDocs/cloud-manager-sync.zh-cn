@@ -30,7 +30,7 @@ summary: 了解 Cloud Sync 中的新增功能。
 * 最后，您还可以删除数据代理组。
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task_sync_managing_data_brokers.html["了解如何管理数据代理组"]。
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html["了解如何管理数据代理组"]。
 
 
 
@@ -231,8 +231,7 @@ link:api-sync.html["了解如何使用 API 设置同步关系"]。
 
 === 报告 SFTP 路径
 
-* 您现在可以： link:task-managing-reports.html["创建报告"] 用于 SFTP 路径。
-
+您现在可以： link:task-managing-reports.html["创建报告"] 用于 SFTP 路径。
 
 
 
@@ -244,7 +243,7 @@ link:api-sync.html["了解如何使用 API 设置同步关系"]。
 
 现在，您可以将数据同步到 Amazon FSX for ONTAP 文件系统或从 Amazon FSX 文件系统同步数据。
 
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/concept-fsx-aws.html["了解适用于 ONTAP 的 Amazon FSX"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["了解适用于 ONTAP 的 Amazon FSX"^]
 * link:reference-requirements.html["查看支持的同步关系"]
 * link:task-creating-relationships.html["了解如何为适用于 ONTAP 的 Amazon FSX 创建同步关系"]
 

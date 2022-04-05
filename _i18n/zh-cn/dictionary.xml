@@ -3,7 +3,6 @@
   <block id="fbaae2c51a88c361540d75265f1ae460" category="summary">Cloud Sync 服务入门包括几个步骤。</block>
   <block id="7552e2b54a17a33019d48e352cbe77a4" category="doc">Cloud Sync 快速入门</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多信息。</block>
-  <block id="bf349214a0fe6c8f9cbe1621ce56039d" category="paragraph">验证您的源和目标是否受支持和设置。最重要的要求是验证数据代理组与源位置和目标位置之间的连接。 <block ref="1c8be3bb7fda7c53b33120f4b5b235ed" category="inline-link-macro-rx"></block>。</block>
   <block id="bd8631de46e31a195212435f5704f717" category="inline-link-macro">查看端点列表。</block>
   <block id="0bfdab96c119413ba592a2c670007760" category="paragraph">NetApp 数据代理软件会将数据从源同步到目标（称为 _sync relationship_ ）。您可以在 AWS 、 Azure 、 Google Cloud 平台或内部运行数据代理。一个由一个或多个数据代理组成的数据代理组需要通过端口 443 建立出站 Internet 连接，以便能够与 Cloud Sync 服务进行通信并联系其他一些服务和存储库。 <block ref="12ea03dce1417efcc10375bae5440131" category="inline-link-macro-rx"></block>。</block>
   <block id="1cfc3a8fedd4f8bdee2a6bbcc9a6379c" category="paragraph">在创建同步关系时， Cloud Sync 会指导您完成安装过程，此时您可以在云中部署数据代理或为自己的 Linux 主机下载安装脚本。</block>
@@ -155,9 +154,7 @@
   <block id="d0f1687c68ee0f0d9bac765716d18923" category="list-text">内部 ONTAP 集群</block>
   <block id="47cc50f1917c802fe0b945a2e3e68960" category="list-text">创建或发现工作环境。</block>
   <block id="64c9a9d3cd7c3ca76cf19b78a96c9b79" category="inline-link">创建适用于 ONTAP 的 Amazon FSX 工作环境</block>
-  <block id="f903e0b8e0f1e5d10c61be1c83633ca0" category="list-text"><block ref="f903e0b8e0f1e5d10c61be1c83633ca0" category="inline-link-rx"></block></block>
   <block id="173d8ca39ff0874de6e21496394efa69" category="inline-link">设置和发现 Azure NetApp Files</block>
-  <block id="07ae18071ed805c67e137b2bbaced471" category="list-text"><block ref="07ae18071ed805c67e137b2bbaced471" category="inline-link-rx"></block></block>
   <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">在 AWS 中启动 Cloud Volumes ONTAP</block>
   <block id="3e33b81f05bb640dee79c5aa4e351c91" category="list-text"><block ref="3e33b81f05bb640dee79c5aa4e351c91" category="inline-link-rx"></block></block>
   <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="inline-link">在 Azure 中启动 Cloud Volumes ONTAP</block>
@@ -197,7 +194,6 @@
   <block id="c04f4488434ced226bcb0be4d5ecf0e6" category="list-text">在 * 分段设置 * 页面上，设置分段：</block>
   <block id="d0108dd861797c657c5b430a731cd0d9" category="list-text">选择是否启用 S3 存储分段加密，然后选择 AWS KMS 密钥，输入 KMS 密钥的 ARN 或选择 AES-256 加密。</block>
   <block id="90970afda72d4e681afa2bb416cbd684" category="inline-link-macro">查看支持的存储类。</block>
-  <block id="e570b0205def3432d6414b80b064fd93" category="list-text">选择 S3 存储类。 <block ref="f8865192424f8cbb3e819f63c6fba6a0" category="inline-link-macro-rx"></block>。</block>
   <block id="8f1e572048af281c3d6bc069daeb0edb" category="inline-image-macro">此屏幕截图显示了 " 存储分段设置 " 页面，您可以通过该页面选择 " 是 " 或 " 否 " 进行加密，并为已同步数据选择特定的 S3 存储类。</block>
   <block id="881cb6b58f9fdb2bde0b3c90f7cbfce8" category="paragraph"><block ref="881cb6b58f9fdb2bde0b3c90f7cbfce8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a7470fea96bed8b75bf17e5f07e01a4" category="list-text">【设置】在 * 设置 * 页面上，定义源文件和文件夹在目标位置的同步和维护方式：</block>
@@ -319,7 +315,6 @@
   <block id="2551f9b8e10e8b9a8eaf44b595104527" category="section-title">使用存储中的密钥创建新的同步关系</block>
   <block id="aea6bdca8526169a7ce9163bff6fd0c5" category="paragraph">使用 Cloud Sync REST API 发布关系。</block>
   <block id="f04d1ca5db491ee5c350c88febbfd65c" category="inline-link-macro">请参见文档中的此页面</block>
-  <block id="5163ecef56728492961efaeb09c79383" category="list-text">要获取用户令牌和 Cloud Central 帐户 ID ， <block ref="9916106685c90c7f11bef1136b0391ad" category="inline-link-macro-rx"></block>。</block>
   <block id="89bd30152e49ad6c1d8ab907487684a6" category="inline-link">请参见 relationships-v2 API 调用</block>
   <block id="5f70a33cfe5bc333821c2a9b0beb2648" category="list-text">为您的后关系构建实体，<block ref="e9795bb60ff464250f91f2bcfd35fc3d" category="inline-link-rx"></block>。</block>
   <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">示例</block>
@@ -558,7 +553,6 @@
   <block id="0c69dd608d3bb18f6d88caa7ab56df36" category="section-title">支持适用于 ONTAP 的 FSX</block>
   <block id="548eba8d98d9c7383a12d30e135e8723" category="paragraph">现在，您可以将数据同步到 Amazon FSX for ONTAP 文件系统或从 Amazon FSX 文件系统同步数据。</block>
   <block id="43ece0944414298a29b4d72bc56373f1" category="inline-link">了解适用于 ONTAP 的 Amazon FSX</block>
-  <block id="86e93a99b4981a73cc48ec525e4d4b43" category="list-text"><block ref="86e93a99b4981a73cc48ec525e4d4b43" category="inline-link-rx"></block></block>
   <block id="3d9c61bbb0656b8a470cbe7bd67859f7" category="inline-link-macro">查看支持的同步关系</block>
   <block id="6b816f21b0dbce67e44499fa4246a4b1" category="list-text"><block ref="6b816f21b0dbce67e44499fa4246a4b1" category="inline-link-macro-rx"></block></block>
   <block id="de0f377f70e8f82779d4f2819fe79524" category="inline-link-macro">了解如何为适用于 ONTAP 的 Amazon FSX 创建同步关系</block>
@@ -1393,7 +1387,6 @@
   <block id="1a89df8c409f135e6e7efd8c0600dba6" category="list-text">现在，您可以更新数据代理的代理配置。</block>
   <block id="71dba184b83141e962cb89e88563baf3" category="list-text">最后，您还可以删除数据代理组。</block>
   <block id="fe914f8d9b65e6214843cbd5f42cddc8" category="inline-link">了解如何管理数据代理组</block>
-  <block id="d7d0bf852f1595f61d55c11980f7910f" category="paragraph"><block ref="0c28ef170c985c7b9baf79aa516f5e52" category="inline-link-rx"></block>。</block>
   <block id="c81f80b5e3a2c8dfe8c2f908cbbfc2fa" category="list-text">现在，您可以筛选 " 同步信息板 " 的内容，以便更轻松地查找与特定状态匹配的同步关系。例如，您可以筛选状态为失败的同步关系</block>
   <block id="ab31e38babe6f59fc89d1a7f8d3ea2c9" category="inline-image-macro">显示信息板顶部按同步筛选状态选项的屏幕截图。</block>
   <block id="b8573b8d6cb0195fa946927c3aa36397" category="inline-link">了解有关报告的更多信息</block>
@@ -1414,7 +1407,6 @@
   <block id="5c46bd67ae4b5c23f9c243b5f396c088" category="section-title">2022 年 2 月 6 日</block>
   <block id="1010f6ebb8a63e17d664e622c2299691" category="paragraph"><block ref="1010f6ebb8a63e17d664e622c2299691" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b5012dcabc22fc10384141ed3b715897" category="paragraph"><block ref="b5012dcabc22fc10384141ed3b715897" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f8cd23c769793fc26c0573678e2a2d07" category="section-title">2022 年 1 月 2 日</block>
   <block id="f61163b681442ac500a8018c87241770" category="section-title">2021 年 11 月 28 日</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
   <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021 年 10 月 4 日</block>
@@ -1423,4 +1415,15 @@
   <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
   <block id="945fb8f32f58d1cc36cb9f1e9e4c6fe5" category="section-title">2021 年 6 月 7 日</block>
   <block id="824b76af9549cb14fd2443aa485afb15" category="section-title">2021 年 5 月 2 日</block>
+  <block id="64801dbe8238ec80e4b5c9666a5fd9fa" category="paragraph">验证您的源和目标是否受支持和设置。最重要的要求是验证数据代理组与源位置和目标位置之间的连接。</block>
+  <block id="36362f6308040767241de0a9acf9350a" category="inline-link-macro">查看支持的关系</block>
+  <block id="415a88dd0bb9358dd0869346d7b40e5d" category="list-text"><block ref="415a88dd0bb9358dd0869346d7b40e5d" category="inline-link-macro-rx"></block></block>
+  <block id="d91b9aa1c8fa0782d005d76cce939796" category="list-text"><block ref="d91b9aa1c8fa0782d005d76cce939796" category="inline-link-macro-rx"></block></block>
+  <block id="c905f3bb3ec7b2f9a4eedc974b519aa9" category="list-text"><block ref="c905f3bb3ec7b2f9a4eedc974b519aa9" category="inline-link-rx"></block></block>
+  <block id="0b837906043da8fb03cf0aac3c6c00fc" category="list-text"><block ref="0b837906043da8fb03cf0aac3c6c00fc" category="inline-link-rx"></block></block>
+  <block id="60c52bea153a81519d33048970ec1005" category="list-text">选择 S3 存储类。 <block ref="b6b337d654785cb938f2cf9fb35baf0c" category="inline-link-macro-rx"></block>。</block>
+  <block id="0eb51107929c8d90e32c3f0445a11813" category="list-text">要获取用户令牌和 Cloud Central 帐户 ID ， <block ref="270dc47ac77b7bdcd0ca5fb87f7199b0" category="inline-link-macro-rx"></block>。</block>
+  <block id="ced18d468e2bb63d56f45d8b16575d02" category="paragraph"><block ref="f6641f935ea9b46efe2ca72364b0bc1e" category="inline-link-rx"></block>。</block>
+  <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
+  <block id="554cf5ea441207629c5c302e09e591e4" category="list-text"><block ref="554cf5ea441207629c5c302e09e591e4" category="inline-link-rx"></block></block>
 </blocks>
