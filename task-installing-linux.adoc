@@ -6,6 +6,7 @@ summary: 创建新的数据代理时，请选择 On-Prem Data Broker 选项以�
 ---
 = 在 Linux 主机上安装数据代理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

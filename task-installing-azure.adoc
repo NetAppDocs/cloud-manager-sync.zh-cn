@@ -6,6 +6,7 @@ summary: 创建新数据代理时，请选择 Azure Data Broker 选项，以便�
 ---
 = 在 Azure 中创建新的数据代理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

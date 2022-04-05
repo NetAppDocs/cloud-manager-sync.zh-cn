@@ -6,6 +6,7 @@ summary: NetApp 无法访问您在使用 Cloud Sync 服务时提供的任何凭�
 ---
 = 数据隐私
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

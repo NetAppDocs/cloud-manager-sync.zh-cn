@@ -6,6 +6,7 @@ summary: 如果需要，请运行卸载脚本以删除安装数据代理时创�
 ---
 = 卸载数据代理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

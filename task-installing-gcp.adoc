@@ -6,6 +6,7 @@ summary: 创建新数据代理时，请选择 Google Cloud Data Broker 选项，
 ---
 = 在 Google Cloud 中创建新的数据代理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

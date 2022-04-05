@@ -6,6 +6,7 @@ summary: 创建新的数据代理时，请选择 AWS Data Broker 选项，以便
 ---
 = 在 AWS 中创建新的数据代理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

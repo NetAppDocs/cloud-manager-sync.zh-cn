@@ -7,6 +7,7 @@ summary: 创建和查看报告以获取信息，您可以在 NetApp 人员的帮
 = 创建和查看报告以调整配置
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

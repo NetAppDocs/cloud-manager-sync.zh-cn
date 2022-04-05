@@ -7,6 +7,7 @@ summary: Cloud Sync 是一种云复制和同步服务，用于在内部和云对
 ---
 = Cloud Sync 文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

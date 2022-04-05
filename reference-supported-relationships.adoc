@@ -6,6 +6,7 @@ summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同�
 ---
 = 支持的同步关系
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

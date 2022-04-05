@@ -6,6 +6,7 @@ summary: 创建需要 Amazon S3 ， Azure 或 Google Cloud 凭据的同步关系
 ---
 = 设置数据代理组以使用外部 HashiCorp 存储
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

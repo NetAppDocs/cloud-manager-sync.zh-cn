@@ -6,6 +6,7 @@ summary: 验证源和目标是否满足以下要求。
 ---
 = 准备源和目标
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

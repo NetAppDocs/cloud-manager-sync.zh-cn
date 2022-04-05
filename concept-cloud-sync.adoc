@@ -6,6 +6,7 @@ summary: NetApp Cloud Sync 服务提供了一种简单、安全且自动化的�
 ---
 = Cloud Sync 概述
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
