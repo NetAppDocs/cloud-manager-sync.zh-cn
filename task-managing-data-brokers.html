@@ -45,31 +45,61 @@
   <link rel="stylesheet" href='/zh-cn/cloud-manager-sync/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/zh-cn/cloud-manager-sync/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/zh-cn/cloud-manager-sync/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/zh-cn/cloud-manager-sync/css/tabbed-blocks.css" type="text/css">
-  <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
-  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/zh-cn/cloud-manager-sync/css/product-family.css' type="text/css">
-  <script src='/zh-cn/cloud-manager-sync/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/cloud-manager-sync/js/na-search.js'></script><script src='/zh-cn/cloud-manager-sync/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/cloud-manager-sync/css/prism-netapp.css' type='text/css'>
 
 
   <script src='/zh-cn/cloud-manager-sync/js/na-utility.js'></script>
   <script src='/zh-cn/cloud-manager-sync/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/zh-cn/cloud-manager-sync/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/zh-cn/cloud-manager-sync/js/toc.js'></script>
@@ -122,16 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/zh-cn/cloud-manager-sync/js/version-dropdown.js'></script>
+  <script src='/zh-cn/cloud-manager-sync/js/custom-dropdown.js'></script>
   <script src='/zh-cn/cloud-manager-sync/js/FileSaver.min.js'></script>
   <script src='/zh-cn/cloud-manager-sync/js/jszip-utils.min.js'></script>
   <script src='/zh-cn/cloud-manager-sync/js/jszip.min.js'></script>
@@ -139,20 +161,15 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-sync/issues/new?body=Page%3A%20[管理数据代理组](https://docs.netapp.com/zh-cn/cloud-manager-sync/task-managing-data-brokers.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-sync/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-sync/blob/main/task-managing-data-brokers.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-sync/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-sync/images/article-sm.svg" class="github-icon" />提供者指南</a>
-    </div>
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-sync/issues/new?body=Page%3A%20[管理数据代理组](https://docs.netapp.com/zh-cn/cloud-manager-sync/task-managing-data-brokers.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-sync/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-sync/blob/main/task-managing-data-brokers.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-sync/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-sync/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此页面上</div>
@@ -162,6 +179,7 @@
       </nav>
     </div>
   </div>
+  
   
   <!-- Start top_hat -->
   <div class="n-top-hat">
@@ -245,7 +263,8 @@
           data-did-you-mean="搜索 {suggestion}。" 
           data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
           data-results-found="找到 {hitCount} 个结果"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -334,6 +353,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/zh-cn/cloud-manager-sync/pdfs/fullsite-sidebar/Cloud_Sync_文档.pdf" >
           <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
 
@@ -344,6 +366,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-sync/pdfs/sidebar/发行说明.pdf" 
@@ -370,6 +395,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-sync/pdfs/sidebar/入门.pdf" 
@@ -393,6 +421,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-sync/pdfs/sidebar/安装数据代理.pdf" 
@@ -432,6 +463,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-sync/pdfs/sidebar/使用_Cloud_Sync.pdf" 
@@ -445,6 +479,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-sync/pdfs/sidebar/在源和目标之间同步数据.pdf" 
@@ -505,6 +542,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-sync/pdfs/sidebar/概念.pdf" 
@@ -533,6 +573,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-sync/pdfs/sidebar/知识和支持.pdf" 
@@ -662,7 +705,7 @@
         许可
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/concept-privacy.html">
         数据隐私
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/faq-sync.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/faq.html">
         常见问题解答
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 知识和支持</div>
@@ -684,6 +727,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+
 
   </div>
   
@@ -737,7 +781,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 19:16:12 +0000">04/01/2022</time>
+    <time datetime="2022-04-05 02:37:10 +0000">04/05/2022</time>
     
   
 
@@ -747,20 +791,22 @@
 <div id="toc" class="toc">
 <div id="toctitle">目录</div>
 <ul class="sectlevel1">
-<li><a href="#数据代理组">数据代理组</a>
+<li><a href="#数据代理组的工作原理">数据代理组的工作原理</a>
 <ul class="sectlevel2">
-<li><a href="#确定组中数据代理的数量">确定组中数据代理的数量</a></li>
 <li><a href="#组可以管理多个关系">组可以管理多个关系</a></li>
-<li><a href="#仅限新的数据代理">仅限新的数据代理</a></li>
+<li><a href="#组中数据代理的数量">组中数据代理的数量</a></li>
 </ul>
 </li>
-<li><a href="#添加新的数据代理">添加新的数据代理</a></li>
 <li><a href="#安全建议">安全建议</a></li>
-<li><a href="#查看数据代理的配置">查看数据代理的配置</a></li>
-<li><a href="#从组中删除数据代理">从组中删除数据代理</a></li>
+<li><a href="#将新数据代理添加到组">将新数据代理添加到组</a></li>
 <li><a href="#编辑组的名称">编辑组的名称</a></li>
+<li><a href="#设置统一配置">设置统一配置</a></li>
+<li><a href="#在组之间移动数据代理">在组之间移动数据代理</a></li>
+<li><a href="#更新代理配置">更新代理配置</a></li>
+<li><a href="#查看数据代理的配置">查看数据代理的配置</a></li>
 <li><a href="#解决数据代理的问题">解决数据代理的问题</a></li>
-<li><a href="#为数据代理组定义统一配置">为数据代理组定义统一配置</a></li>
+<li><a href="#从组中删除数据代理">从组中删除数据代理</a></li>
+<li><a href="#删除数据代理组">删除数据代理组</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -771,16 +817,10 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="数据代理组">数据代理组</h2>
+<h2 id="数据代理组的工作原理">数据代理组的工作原理</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>将数据代理分组在一起有助于提高同步关系的性能。</p>
-</div>
-<div class="sect2">
-<h3 id="确定组中数据代理的数量">确定组中数据代理的数量</h3>
-<div class="paragraph">
-<p>在许多情况下、单个数据代理可以满足同步关系的性能要求。如果不支持，您可以通过向组添加其他数据代理来提高同步性能。但是，您应该首先检查可能影响同步性能的其他因素。 <a href="faq.html#how-many-data-brokers-are-required-in-a-group">"详细了解如何确定何时需要多个数据代理"</a>。</p>
-</div>
+<p>一个数据代理组可以包含一个或多个数据代理。将数据代理分组在一起有助于提高同步关系的性能。</p>
 </div>
 <div class="sect2">
 <h3 id="组可以管理多个关系">组可以管理多个关系</h3>
@@ -808,15 +848,42 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="仅限新的数据代理">仅限新的数据代理</h3>
+<h3 id="组中数据代理的数量">组中数据代理的数量</h3>
 <div class="paragraph">
-<p>您只能向组添加新的数据代理。您不能将现有数据代理添加到组中。</p>
+<p>在许多情况下、单个数据代理可以满足同步关系的性能要求。如果不支持，您可以通过向组添加其他数据代理来提高同步性能。但是，您应该首先检查可能影响同步性能的其他因素。 <a href="faq.html#how-many-data-brokers-are-required-in-a-group">"详细了解如何确定何时需要多个数据代理"</a>。</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="添加新的数据代理">添加新的数据代理</h2>
+<h2 id="安全建议">安全建议</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>为了确保数据代理计算机的安全性， NetApp 建议执行以下操作：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SSH 不应允许 X11 转发</p>
+</li>
+<li>
+<p>SSH 不应允许 TCP 连接转发</p>
+</li>
+<li>
+<p>SSH 不应允许使用通道</p>
+</li>
+<li>
+<p>SSH 不应接受客户端环境变量</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这些安全建议有助于防止未经授权连接到数据代理计算机。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="将新数据代理添加到组">将新数据代理添加到组</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>可以通过多种方法创建新的数据代理：</p>
@@ -838,7 +905,7 @@
 </ul>
 </div>
 <div class="ulist">
-<div class="title">您应了解的事项</div>
+<div class="title">开始之前</div>
 <ul>
 <li>
 <p>您不能将数据代理添加到管理加密同步关系的组中。</p>
@@ -893,7 +960,7 @@
 <li>
 <p>单击操作菜单并选择 * 添加数据代理 * 。</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_sync_group_add.gif" alt="组中每个数据代理都可以使用的操作菜单的屏幕截图。"></span></p>
+<p><span class="image"><img src="./media/screenshot_sync_group_add.png" alt="组中每个数据代理都可以使用的操作菜单的屏幕截图。"></span></p>
 </div>
 </li>
 <li>
@@ -923,29 +990,162 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="安全建议">安全建议</h2>
+<h2 id="编辑组的名称">编辑组的名称</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>为了确保数据代理计算机的安全性， NetApp 建议执行以下操作：</p>
+<p>随时更改数据代理组的名称。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>单击 * 同步 &gt; 管理数据代理 * 。</p>
+</li>
+<li>
+<p>单击操作菜单并选择 * 编辑组名称 * 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_group_edit.gif" alt="组中每个数据代理都可以使用的操作菜单的屏幕截图。"></span></p>
+</div>
+</li>
+<li>
+<p>输入新名称并单击 * 保存 * 。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Cloud Sync 将更新数据代理组的名称。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="设置统一配置">设置统一配置</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果同步关系在同步过程中遇到错误，统一数据代理组的并发性有助于减少同步错误的数量。请注意，更改组的配置可能会降低传输速度，从而影响性能。</p>
+</div>
+<div class="paragraph">
+<p>建议不要自行更改配置。您应咨询 NetApp ，了解何时更改配置以及如何更改配置。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>单击 * 管理数据代理 * 。</p>
+</li>
+<li>
+<p>单击数据代理组的设置图标。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_group_settings.png" alt="显示数据代理组的设置图标的屏幕截图。"></span></p>
+</div>
+</li>
+<li>
+<p>根据需要更改设置，然后单击 * 统一配置 * 。</p>
+<div class="paragraph">
+<p>请注意以下事项：</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>SSH 不应允许 X11 转发</p>
+<p>您可以选择要更改的设置—不需要一次性更改全部四个设置。</p>
 </li>
 <li>
-<p>SSH 不应允许 TCP 连接转发</p>
+<p>将新配置发送到数据代理后，数据代理将自动重新启动并使用新配置。</p>
 </li>
 <li>
-<p>SSH 不应允许使用通道</p>
+<p>此更改可能需要长达一分钟的时间，此更改将在 Cloud Sync 界面中显示。</p>
 </li>
 <li>
-<p>SSH 不应接受客户端环境变量</p>
+<p>如果数据代理未运行，则其配置不会更改，因为 Cloud Sync 无法与其通信。数据代理重新启动后，配置将发生更改。</p>
+</li>
+<li>
+<p>设置统一配置后，任何新的数据代理都将自动使用新配置。</p>
 </li>
 </ul>
 </div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="在组之间移动数据代理">在组之间移动数据代理</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>这些安全建议有助于防止未经授权连接到数据代理计算机。</p>
+<p>如果需要提高目标数据代理组的性能，请将数据代理从一个组移动到另一个组。</p>
+</div>
+<div class="paragraph">
+<p>例如，如果某个数据代理不再管理同步关系，您可以轻松地将其移动到另一个管理同步关系的组。</p>
+</div>
+<div class="ulist">
+<div class="title">限制</div>
+<ul>
+<li>
+<p>如果某个数据代理组正在管理同步关系，并且该组中只有一个数据代理，则无法将该数据代理移动到另一个组。</p>
+</li>
+<li>
+<p>您不能将数据代理移入或移出管理加密同步关系的组。</p>
+</li>
+<li>
+<p>您无法移动当前正在部署的数据代理。</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>单击 * 同步 &gt; 管理数据代理 * 。</p>
+</li>
+<li>
+<p>单击 <span class="image"><img src="./media/screenshot_sync_group_expand.gif" alt="用于展开组中数据代理列表的按钮的屏幕截图。"></span> 展开组中的数据代理列表。</p>
+</li>
+<li>
+<p>单击数据代理的操作菜单，然后选择 * 移动数据代理 * 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_group_remove.png" alt="可用于每个数据代理组的操作菜单的屏幕截图。"></span></p>
+</div>
+</li>
+<li>
+<p>创建新的数据代理组或选择现有数据代理组。</p>
+</li>
+<li>
+<p>单击 * 移动 * 。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Cloud Sync 会将数据代理移动到新的或现有的数据代理组。如果上一个组中没有其他数据代理，则 Cloud Sync 会将其删除。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="更新代理配置">更新代理配置</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>通过添加有关新代理配置的详细信息或编辑现有代理配置来更新数据代理的代理配置。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>单击 * 同步 &gt; 管理数据代理 * 。</p>
+</li>
+<li>
+<p>单击 <span class="image"><img src="./media/screenshot_sync_group_expand.gif" alt="用于展开组中数据代理列表的按钮的屏幕截图。"></span> 展开组中的数据代理列表。</p>
+</li>
+<li>
+<p>单击数据代理的操作菜单，然后选择 * 编辑代理配置 * 。</p>
+</li>
+<li>
+<p>指定有关代理的详细信息：主机名，端口号，用户名和密码。</p>
+</li>
+<li>
+<p>单击 * 更新 * 。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Cloud Sync 会更新数据代理，以使用代理配置进行 Internet 访问。</p>
 </div>
 </div>
 </div>
@@ -1009,6 +1209,34 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="解决数据代理的问题">解决数据代理的问题</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Sync 会显示每个数据代理的状态，以帮助您解决问题。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>确定状态为 " 未知 " 或 " 失败 " 的任何数据代理。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_broker_status.gif" alt=""></span></p>
+</div>
+</li>
+<li>
+<p>将鼠标悬停在上 <span class="image"><img src="./media/screenshot_sync_status_icon.gif" alt=""></span> 图标以查看失败原因。</p>
+</li>
+<li>
+<p>更正问题描述。</p>
+<div class="paragraph">
+<p>例如，如果数据代理脱机，您可能只需重新启动它，或者如果初始部署失败，您可能需要删除数据代理。</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="从组中删除数据代理">从组中删除数据代理</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -1051,10 +1279,13 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="编辑组的名称">编辑组的名称</h2>
+<h2 id="删除数据代理组">删除数据代理组</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>随时更改数据代理组的名称。</p>
+<p>如果某个数据代理组不再管理任何同步关系，您可以删除该组，从而从 Cloud Sync 中删除所有数据代理。</p>
+</div>
+<div class="paragraph">
+<p>Cloud Sync 删除的数据代理仅会从 Cloud Sync 的记录中删除。您需要从云提供商和任何其他云资源中手动删除数据代理实例。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步骤</div>
@@ -1063,96 +1294,18 @@
 <p>单击 * 同步 &gt; 管理数据代理 * 。</p>
 </li>
 <li>
-<p>单击操作菜单并选择 * 编辑组名称 * 。</p>
+<p>单击操作菜单并选择 * 删除组 * 。</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_sync_group_edit.gif" alt="组中每个数据代理都可以使用的操作菜单的屏幕截图。"></span></p>
+<p><span class="image"><img src="./media/screenshot_sync_group_add.png" alt="组中每个数据代理都可以使用的操作菜单的屏幕截图。"></span></p>
 </div>
 </li>
 <li>
-<p>输入新名称并单击 * 保存 * 。</p>
+<p>要进行确认，请输入组名称，然后单击 * 删除组 * 。</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>Cloud Sync 将更新数据代理组的名称。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="解决数据代理的问题">解决数据代理的问题</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Cloud Sync 会显示每个数据代理的状态，以帮助您解决问题。</p>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>确定状态为 " 未知 " 或 " 失败 " 的任何数据代理。</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_sync_broker_status.gif" alt=""></span></p>
-</div>
-</li>
-<li>
-<p>将鼠标悬停在上 <span class="image"><img src="./media/screenshot_sync_status_icon.gif" alt=""></span> 图标以查看失败原因。</p>
-</li>
-<li>
-<p>更正问题描述。</p>
-<div class="paragraph">
-<p>例如，如果数据代理脱机，您可能只需重新启动它，或者如果初始部署失败，您可能需要删除数据代理。</p>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="为数据代理组定义统一配置">为数据代理组定义统一配置</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>如果同步关系在同步过程中遇到错误，统一数据代理组的并发性有助于减少同步错误的数量。请注意，更改组的配置可能会降低传输速度，从而影响性能。</p>
-</div>
-<div class="paragraph">
-<p>建议不要自行更改配置。您应咨询 NetApp ，了解何时更改配置以及如何更改配置。</p>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>单击 * 管理数据代理 * 。</p>
-</li>
-<li>
-<p>单击数据代理组的设置图标。</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_sync_group_settings.png" alt="显示数据代理组的设置图标的屏幕截图。"></span></p>
-</div>
-</li>
-<li>
-<p>根据需要更改设置，然后单击 * 统一配置 * 。</p>
-<div class="paragraph">
-<p>请注意以下事项：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>您可以选择要更改的设置—不需要一次性更改全部四个设置。</p>
-</li>
-<li>
-<p>将新配置发送到数据代理后，数据代理将自动重新启动并使用新配置。</p>
-</li>
-<li>
-<p>此更改可能需要长达一分钟的时间，此更改将在 Cloud Sync 界面中显示。</p>
-</li>
-<li>
-<p>如果数据代理未运行，则其配置不会更改，因为 Cloud Sync 无法与其通信。数据代理重新启动后，配置将发生更改。</p>
-</li>
-<li>
-<p>设置统一配置后，任何新的数据代理都将自动使用新配置。</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
+<p>Cloud Sync 将删除数据代理并删除组。</p>
 </div>
 </div>
 </div>
@@ -1169,98 +1322,122 @@
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
-  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">条款和条件</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">想就我们的网站提供反馈?</span>
+              <a target="_self" href="javascript:netapp_mailto()">请告诉我们</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-cn/announcements/">通知</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
       </div><!-- Elasticsearch JS -->
