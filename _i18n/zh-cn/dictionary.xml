@@ -1412,7 +1412,6 @@
   <block id="36362f6308040767241de0a9acf9350a" category="inline-link-macro">查看支持的关系</block>
   <block id="415a88dd0bb9358dd0869346d7b40e5d" category="list-text"><block ref="415a88dd0bb9358dd0869346d7b40e5d" category="inline-link-macro-rx"></block></block>
   <block id="d91b9aa1c8fa0782d005d76cce939796" category="list-text"><block ref="d91b9aa1c8fa0782d005d76cce939796" category="inline-link-macro-rx"></block></block>
-  <block id="c905f3bb3ec7b2f9a4eedc974b519aa9" category="list-text"><block ref="c905f3bb3ec7b2f9a4eedc974b519aa9" category="inline-link-rx"></block></block>
   <block id="0b837906043da8fb03cf0aac3c6c00fc" category="list-text"><block ref="0b837906043da8fb03cf0aac3c6c00fc" category="inline-link-rx"></block></block>
   <block id="60c52bea153a81519d33048970ec1005" category="list-text">选择 S3 存储类。 <block ref="b6b337d654785cb938f2cf9fb35baf0c" category="inline-link-macro-rx"></block>。</block>
   <block id="0eb51107929c8d90e32c3f0445a11813" category="list-text">要获取用户令牌和 Cloud Central 帐户 ID ， <block ref="270dc47ac77b7bdcd0ca5fb87f7199b0" category="inline-link-macro-rx"></block>。</block>
@@ -1471,4 +1470,5 @@
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 代表将审核您的案例，并尽快与您联系。</block>
   <block id="c07503bbdaf42732886b6b9f136d9eb0" category="list-text">盒 ^1^</block>
   <block id="c01bb6a5867adae467a31539eda72b37" category="cell">SFTP ^2^</block>
+  <block id="6cd346b36825d1f1cef046571571fce0" category="list-text"><block ref="6cd346b36825d1f1cef046571571fce0" category="inline-link-rx"></block></block>
 </blocks>

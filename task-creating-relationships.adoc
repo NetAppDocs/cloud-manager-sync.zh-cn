@@ -33,7 +33,7 @@ summary: 创建同步关系时、 Cloud Sync 服务会将文件从源复制到�
 .步骤
 . 创建或发现工作环境。
 +
-** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["创建适用于 ONTAP 的 Amazon FSX 工作环境"^]
+** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["创建适用于 ONTAP 的 Amazon FSX 工作环境"^]
 ** https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["设置和发现 Azure NetApp Files"^]
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 AWS 中启动 Cloud Volumes ONTAP"^]
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Azure 中启动 Cloud Volumes ONTAP"^]
