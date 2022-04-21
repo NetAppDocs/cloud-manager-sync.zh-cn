@@ -63,7 +63,7 @@ summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同�
 * Amazon S3
 * Azure Blob
 * Azure NetApp Files
-* 盒装 ^2 ， 3^
+* 盒 ^1^
 * Cloud Volumes ONTAP
 * Cloud Volumes Service
 * Google Cloud 存储
@@ -112,8 +112,11 @@ summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同�
 
 
 
-| 盒 ^2^  a| 
+| 盒 ^1^  a| 
 * Amazon S3
+* 适用于 ONTAP 的 Amazon FSX
+* Azure NetApp Files
+* Cloud Volumes ONTAP
 * IBM 云对象存储
 * NFS 服务器
 * SMB 服务器
@@ -183,7 +186,7 @@ summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同�
 * Amazon S3
 * Azure Blob
 * Azure NetApp Files
-* 盒装 ^2 ， 3^
+* 盒 ^1^
 * Cloud Volumes ONTAP
 * Cloud Volumes Service
 * Google Cloud 存储
@@ -241,7 +244,7 @@ summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同�
 
 
 
-| SFTP ^1^ | S3 
+| SFTP ^2^ | S3 
 
 
 | SMB 服务器  a| 
@@ -269,7 +272,7 @@ summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同�
 * Amazon S3
 * Azure Blob
 * Azure NetApp Files
-* 盒装 ^2 ， 3^
+* 盒 ^1^
 * Cloud Volumes ONTAP
 * Cloud Volumes Service
 * Google Cloud 存储
@@ -284,8 +287,8 @@ summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同�
 |===
 注释：
 
-. 仅使用 Cloud Sync API 支持与此源 / 目标的同步关系。
 . 预览版可提供盒式支持。
+. 仅使用 Cloud Sync API 支持与此源 / 目标的同步关系。
 . 当 BLOB 容器是目标容器时，可以选择特定的 Azure Blob 存储层：
 +
 ** 热存储

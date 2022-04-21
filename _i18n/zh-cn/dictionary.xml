@@ -745,10 +745,7 @@
   <block id="e83e5674ab295a6613b60f5e12d1bfe3" category="list-text">NFS 服务器</block>
   <block id="876d9b7b1c11a792f25a0e1e9dbf31dd" category="list-text">SMB 服务器</block>
   <block id="f83bcb8e69c5f1d1eb29cddacb8374b0" category="list-text">SMB 服务器</block>
-  <block id="05fc5760e6773a5e87f7fe0bb48c29ed" category="list-text">盒装 ^2 ， 3^</block>
-  <block id="34b98f7ba53befc78287d863ace2c006" category="cell">盒 ^2^</block>
   <block id="c17ce6a7cdcb97581c6d5603ec7d447a" category="cell">内部 ONTAP 集群</block>
-  <block id="55d5b6dbf906d2bf27a6569938b053e5" category="cell">SFTP ^1^</block>
   <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="cell">S3</block>
   <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">注释：</block>
   <block id="6b851b2682356f2e929b17451db9ba27" category="list-text">仅使用 Cloud Sync API 支持与此源 / 目标的同步关系。</block>
@@ -1472,4 +1469,6 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">单击 * 致电我们 * 可查找 NetApp 技术支持的电话号码。</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">单击 * 打开问题描述 * ，选择一个选项，然后单击 * 发送 * 。</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 代表将审核您的案例，并尽快与您联系。</block>
+  <block id="c07503bbdaf42732886b6b9f136d9eb0" category="list-text">盒 ^1^</block>
+  <block id="c01bb6a5867adae467a31539eda72b37" category="cell">SFTP ^2^</block>
 </blocks>
