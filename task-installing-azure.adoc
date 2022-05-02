@@ -40,9 +40,60 @@ summary: 创建新数据代理时，请选择 Azure Data Broker 选项，以便�
 
 
 
+== 在Azure中部署数据代理所需的权限
+
+确保用于部署数据代理的Azure用户帐户具有以下权限。
+
+[source, json]
+----
+{
+    "Name": "Azure Data Broker",
+    "Actions": [
+					"Microsoft.Resources/subscriptions/read",
+                    "Microsoft.Resources/deployments/operationstatuses/read",
+                    "Microsoft.Resources/subscriptions/locations/read",
+                    "Microsoft.Network/networkInterfaces/read",
+                    "Microsoft.Network/virtualNetworks/subnets/read",
+                    "Microsoft.Resources/subscriptions/resourceGroups/write",
+                    "Microsoft.Resources/subscriptions/resourceGroups/delete",
+                    "Microsoft.Resources/deployments/write",
+                    "Microsoft.Resources/deployments/validate/action",
+                    "Microsoft.Resources/deployments/operationStatuses/read",
+                    "Microsoft.Resources/deployments/cancel/action",
+                    "Microsoft.Compute/virtualMachines/read",
+                    "Microsoft.Compute/virtualMachines/delete",
+                    "Microsoft.Compute/disks/delete",
+                    "Microsoft.Network/networkInterfaces/delete",
+                    "Microsoft.Network/publicIPAddresses/delete",
+                    "Microsoft.Network/networkSecurityGroups/securityRules/delete",
+                    "Microsoft.Resources/subscriptions/resourceGroups/write",
+                    "Microsoft.Compute/virtualMachines/delete",
+                    "Microsoft.Network/networkSecurityGroups/write",
+                    "Microsoft.Network/networkSecurityGroups/join/action",
+                    "Microsoft.Compute/disks/write",
+                    "Microsoft.Network/networkInterfaces/write",
+                    "Microsoft.Network/virtualNetworks/read",
+                    "Microsoft.Network/publicIPAddresses/write",
+                    "Microsoft.Compute/virtualMachines/write",
+                    "Microsoft.Compute/virtualMachines/extensions/write",
+                    "Microsoft.Resources/deployments/read",
+                    "Microsoft.Network/networkSecurityGroups/read",
+                    "Microsoft.Network/publicIPAddresses/read",
+                    "Microsoft.Network/virtualNetworks/subnets/join/action",
+                    "Microsoft.Network/publicIPAddresses/join/action",
+                    "Microsoft.Network/networkInterfaces/join/action"
+    ],
+    "NotActions": [],
+    "AssignableScopes": [],
+    "Description": "Azure Data Broker",
+    "IsCustom": "true"
+}
+----
+
+
 == 身份验证方法
 
-部署数据代理时，您需要选择一种身份验证方法：密码或 SSH 公共 - 私有密钥对。
+部署数据代理时、您需要为虚拟机选择一种身份验证方法：密码或SSH公共-专用密钥对。
 
 有关创建密钥对的帮助，请参见 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys["Azure 文档：在 Azure 中为 Linux VM 创建和使用 SSH 公共 - 私有密钥对"^]。
 

@@ -1035,7 +1035,6 @@
   <block id="df8514e24a07bfd81c667163f17fbec0" category="paragraph">除中国、美国政府和美国国防部地区外，所有地区均受支持。</block>
   <block id="a1e31a9251ce00d752f2ef3d40f3fa3a" category="paragraph">当 Cloud Sync 在 Azure 中部署数据代理时，它会创建一个安全组来启用所需的出站通信。</block>
   <block id="38354aeafcfd5993a9d65d97514a8e3d" category="section-title">身份验证方法</block>
-  <block id="5f01cb10cf737db33ea0f9db4e40cc94" category="paragraph">部署数据代理时，您需要选择一种身份验证方法：密码或 SSH 公共 - 私有密钥对。</block>
   <block id="0be7700ba4689baa197ac3c2b94928a5" category="inline-link">Azure 文档：在 Azure 中为 Linux VM 创建和使用 SSH 公共 - 私有密钥对</block>
   <block id="4e2153a19cb9d86adf7b5ba332e78a45" category="paragraph">有关创建密钥对的帮助，请参见<block ref="3bfff4aa3d3a3eae965cce9b3b615a4a" category="inline-link-rx"></block>。</block>
   <block id="896293b91a375c72889dc16e1c816e72" category="paragraph">可以通过几种方法创建新的数据代理。以下步骤介绍如何在创建同步关系时在 Azure 中安装数据代理。</block>
@@ -1471,4 +1470,18 @@
   <block id="c07503bbdaf42732886b6b9f136d9eb0" category="list-text">盒 ^1^</block>
   <block id="c01bb6a5867adae467a31539eda72b37" category="cell">SFTP ^2^</block>
   <block id="6cd346b36825d1f1cef046571571fce0" category="list-text"><block ref="6cd346b36825d1f1cef046571571fce0" category="inline-link-rx"></block></block>
+  <block id="81fb4d1570abd75a1e2945d1f1c9f8cc" category="section-title">2022年5月1日</block>
+  <block id="5cccebf55aa4da23124f776528630bf3" category="section-title">同步超时</block>
+  <block id="5e4a50a7111ce8bba22cd01d07f86a3b" category="paragraph">现在、可以为同步关系使用新的*同步超时*设置。通过此设置、您可以定义在指定的小时数或天数内未完成数据同步时、Cloud Sync 是否应取消数据同步。</block>
+  <block id="5f03ed55634cfe3f169d94549e45f06c" category="paragraph"><block ref="050cf03a98debb532006e420507b54cf" category="inline-link-rx"></block>。</block>
+  <block id="a274f4d4670213a9045ce258c6c56b80" category="section-title">通知</block>
+  <block id="0a3f4ee017f808dc79fb4939a3eaf91b" category="paragraph">现在、可以为同步关系使用新的*通知*设置。通过此设置、您可以选择是否在Cloud Manager的通知中心接收Cloud Sync 通知。您可以为成功的数据同步、失败的数据同步和已取消的数据同步启用通知。</block>
+  <block id="9081c0430b4e4fcf1f0dd042e7c0ca60" category="inline-image-macro">显示Cloud Manager中通知中心的屏幕截图。</block>
+  <block id="914b918c172fa270f423df8135932978" category="paragraph"><block ref="914b918c172fa270f423df8135932978" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="64b10e9eb890594a5a1756353aca634b" category="list-text">同步超时</block>
+  <block id="4affab38ec04e06031b349c8bc2e8e59" category="list-text">定义如果同步未在指定的小时数或天数内完成、Cloud Sync 是否应取消数据同步。</block>
+  <block id="870569e17f9da6759aebc4bec6749d61" category="list-text">用于选择是否在Cloud Manager的通知中心接收Cloud Sync 通知。您可以为成功的数据同步、失败的数据同步和已取消的数据同步启用通知。</block>
+  <block id="c658fd4f091c10877f154fbf84fbee89" category="section-title">在Azure中部署数据代理所需的权限</block>
+  <block id="180af86c5f798e1a752bebb100366ffb" category="paragraph">确保用于部署数据代理的Azure用户帐户具有以下权限。</block>
+  <block id="e507d0455db379d4826dabce8ecb97ed" category="paragraph">部署数据代理时、您需要为虚拟机选择一种身份验证方法：密码或SSH公共-专用密钥对。</block>
 </blocks>

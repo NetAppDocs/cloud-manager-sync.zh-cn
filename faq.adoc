@@ -85,15 +85,15 @@ NOTE: Cloud Volumes Service 和 Azure NetApp Files 均可免费使用 Cloud Sync
 
 
 
-== 什么是数据代理组？
-
-每个数据代理都属于一个数据代理组。将数据代理分组在一起有助于提高同步关系的性能。
-
-
-
 === 如何访问 Cloud Sync ？
 
 Cloud Sync 可从 Cloud Manager 的 * 同步 * 选项卡中访问。
+
+
+
+=== 什么是数据代理组？
+
+每个数据代理都属于一个数据代理组。将数据代理分组在一起有助于提高同步关系的性能。
 
 
 

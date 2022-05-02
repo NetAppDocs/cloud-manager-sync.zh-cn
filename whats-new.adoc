@@ -18,6 +18,28 @@ summary: 了解 Cloud Sync 中的新增功能。
 
 
 
+== 2022年5月1日
+
+
+
+=== 同步超时
+
+现在、可以为同步关系使用新的*同步超时*设置。通过此设置、您可以定义在指定的小时数或天数内未完成数据同步时、Cloud Sync 是否应取消数据同步。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["了解有关更改同步关系设置的更多信息"]。
+
+
+
+=== 通知
+
+现在、可以为同步关系使用新的*通知*设置。通过此设置、您可以选择是否在Cloud Manager的通知中心接收Cloud Sync 通知。您可以为成功的数据同步、失败的数据同步和已取消的数据同步启用通知。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png["显示Cloud Manager中通知中心的屏幕截图。"]
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["了解有关更改同步关系设置的更多信息"]。
+
+
+
 == 2022 年 4 月 3 日
 
 
