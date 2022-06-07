@@ -299,7 +299,7 @@ Cloud Sync 会自动在 NFS 服务器之间复制 NFS 权限，如下所示：
 * IBM Cloud Object Storage -> IBM Cloud Object Storage
 
 
-^1^ 对于这些同步关系，您需要 link:task-creating-relationships.html["创建同步关系时启用设置"]。
+^1^ 对于这些同步关系，您需要 link:task-creating-relationships.html["在创建同步关系时启用对象复制设置"]。
 
 
 

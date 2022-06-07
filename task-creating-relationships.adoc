@@ -110,6 +110,20 @@ image:screenshot_bucket_setup.gif["此屏幕截图显示了 \" 存储分段设�
 同步超时:: 定义如果同步未在指定的小时数或天数内完成、Cloud Sync 是否应取消数据同步。
 通知:: 用于选择是否在Cloud Manager的通知中心接收Cloud Sync 通知。您可以为成功的数据同步、失败的数据同步和已取消的数据同步启用通知。
 重试:: 定义在跳过文件之前、 Cloud Sync 应重试同步文件的次数。
+持续同步:: 初始数据同步后、Cloud Sync 将侦听源S3存储分段上的更改、并在发生更改时持续同步目标。无需按计划间隔重新扫描源。
++
+--
+只有在创建同步关系以及从S3存储分段同步到S3、Google Cloud Storage、Azure Blob Storage、StorageGRID 或IBM存储时、此设置才可用。
+
+如果启用此设置、则会影响以下其他功能：
+
+** 同步计划已禁用。
+** 以下设置将还原为其默认值：Sync Timeout、Recently Modified Files和Date Modified。
+** 按大小筛选仅在复制事件(而不是删除事件)上处于活动状态。
+** 创建此关系后、您只能加快或删除此关系。您不能中止同步、修改设置或查看报告。
+
+
+--
 比较依据:: 选择 Cloud Sync 在确定文件或目录是否已更改并应重新同步时是否应比较某些属性。
 +
 --
@@ -127,7 +141,7 @@ image:screenshot_bucket_setup.gif["此屏幕截图显示了 \" 存储分段设�
 --
 创建关系后，您无法编辑此选项。
 
-包含 S3 兼容端点（ S3 ， StorageGRID 或 IBM 云对象存储）的同步关系支持复制标记。
+包含Azure Blob或与S3兼容的端点(S3、StorageGRID 或IBM云对象存储)作为目标的同步关系支持复制标记。
 
 以下任一端点之间的 " 云到云 " 关系支持复制元数据：
 
