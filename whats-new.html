@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-sync/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-sync/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-sync/whats-new.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-sync/whats-new.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-sync/whats-new.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-sync/whats-new.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -360,8 +352,6 @@
         
         <a target="_blank" href="/zh-cn/cloud-manager-sync/pdfs/fullsite-sidebar/Cloud_Sync_文档.pdf" >
           <img src="/zh-cn/cloud-manager-sync/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
-
-
 
 
 
@@ -638,10 +628,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有 Cloud Manager 文档
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-cn/cloud-manager-family/"><img src="/zh-cn/cloud-manager-sync/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-sync/index.html">
         云同步文档
       </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 发行说明</div>
@@ -787,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-02 13:24:35 +0000">05/02/2022</time>
+    <time datetime="2022-06-07 13:59:09 +0000">06/07/2022</time>
     
   
 
@@ -798,6 +788,63 @@
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>了解 Cloud Sync 中的新增功能。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2022年6月6日">2022年6月6日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="持续同步">持续同步</h3>
+<div class="paragraph">
+<p>通过新设置、您可以持续将源S3存储分段中的更改同步到目标。</p>
+</div>
+<div class="paragraph">
+<p>初始数据同步后、Cloud Sync 将侦听源S3存储分段上的更改、并在发生更改时持续同步目标。无需按计划间隔重新扫描源。只有在从S3存储分段同步到S3、Google Cloud Storage、Azure Blob Storage、StorageGRID 或IBM存储时、此设置才可用。</p>
+</div>
+<div class="paragraph">
+<p>请注意、与数据代理关联的IAM角色需要以下权限才能使用此设置：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"s3:GetBucketNotification",
+"s3:PutBucketNotification"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这些权限会自动添加到您创建的任何新数据代理中。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-creating-relationships.html#settings">"了解有关持续同步设置的更多信息"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="显示所有ontap-卷">显示所有ONTAP 卷</h3>
+<div class="paragraph">
+<p>现在、在创建同步关系时、Cloud Sync 将显示源Cloud Volumes ONTAP 系统、内部ONTAP 集群或ONTAP 文件系统上的所有卷。</p>
+</div>
+<div class="paragraph">
+<p>以前、Cloud Sync 只会显示与选定协议匹配的卷。此时将显示所有卷、但与选定协议不匹配或没有共享或导出的任何卷都将灰显且不可选。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="正在将标记复制到azure-blob">正在将标记复制到Azure Blob</h3>
+<div class="paragraph">
+<p>在创建Azure Blob作为目标的同步关系时、现在可以使用Cloud Sync 将标记复制到Azure Blob容器：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在*设置*页面上、您可以使用*为对象复制*设置将标记从源复制到Azure Blob容器。除了复制元数据之外、还需要执行此操作。</p>
+</li>
+<li>
+<p>在*标记/元数据*页面上、您可以指定要在复制到Azure Blob容器的对象上设置的Blob索引标记。以前、您只能指定关系元数据。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如果Azure Blob是目标、而源是Azure Blob或与S3兼容的端点(S3、StorageGRID 或IBM云对象存储)、则支持这些选项。</p>
+</div>
 </div>
 </div>
 </div>
@@ -1465,4 +1512,5 @@
     </script>
     <script src='/zh-cn/cloud-manager-sync/js/www-ntap.js'></script>
     <script src='/zh-cn/cloud-manager-sync/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/cloud-manager-sync/js/sidebar.js'></script>
   </body></html>
