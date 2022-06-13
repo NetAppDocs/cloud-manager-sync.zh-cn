@@ -44,7 +44,7 @@ summary: 创建需要 Amazon S3 ， Azure 或 Google Cloud 凭据的同步关系
 
 
 
-==== 示例
+=== 示例
 
 以下示例显示了指向机密的 URL 。
 
