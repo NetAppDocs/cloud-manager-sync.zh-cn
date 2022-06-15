@@ -78,7 +78,6 @@ NOTE: Cloud Volumes Service 和 Azure NetApp Files 均可免费使用 Cloud Sync
 
 请注意以下有关在云之外使用云同步的要点：
 
-* 对于内部同步，可通过 NetApp StorageGRID 获得私有 Amazon S3 数据段。
 * 数据代理组需要 Internet 连接才能与 Cloud Sync 服务进行通信。
 * 如果您不直接从 NetApp 购买许可证，则需要一个 AWS 或 Azure 帐户才能为 PAYGO Cloud Sync 服务计费。
 
