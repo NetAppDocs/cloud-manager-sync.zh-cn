@@ -770,10 +770,6 @@
   <block id="c9c82aba1257ee6c6ebbade2353f0b0d" category="paragraph"><block ref="c9c82aba1257ee6c6ebbade2353f0b0d" category="inline-link-macro-rx"></block></block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="doc">限制</block>
-  <block id="d00599d1e32bdf0c309c42b0ff1535ba" category="list-text">中国不支持云同步。</block>
-  <block id="bbfde100f15ce21347e3f27b98fa179d" category="list-text">除中国外、以下地区不支持 Cloud Sync 数据代理：</block>
-  <block id="28973d06f414ecd2b8aadf8888439345" category="list-text">Azure US gov 酒店</block>
-  <block id="f216d6b6f01f8c6bb55a0365652582d1" category="list-text">Azure US DoD</block>
   <block id="0f3ab1e6e87b1df0d7ec0b58658fb4dd" category="summary">您可以获得有关 Cloud Sync 的帮助，并通过论坛，聊天服务和视频等各种资源查找更多信息。</block>
   <block id="c05cf44a39f617084e8016772fe65923" category="doc">Cloud Sync 技术常见问题解答</block>
   <block id="a0d932b5085e493a71dbcdcc11a705b4" category="paragraph">如果您只是在寻找一个问题的快速答案，此常见问题解答将会有所帮助。</block>
@@ -804,7 +800,6 @@
   <block id="d48011c59919ad7d6dbbbfd7b93b8a1d" category="section-title">是否可以在云之外使用 Cloud Sync ？</block>
   <block id="21257847b1628900e37090da9e642da2" category="paragraph">是的、您可以在非云架构中使用 Cloud Sync 。源和目标可以驻留在内部，数据代理软件也可以驻留在内部。</block>
   <block id="cf2134fa111a18f1f2949af03a0b455d" category="paragraph">请注意以下有关在云之外使用云同步的要点：</block>
-  <block id="4cf11257ca11f0b945f9be6ea331b17b" category="list-text">对于内部同步，可通过 NetApp StorageGRID 获得私有 Amazon S3 数据段。</block>
   <block id="3339dd709817535785aeeda3c3be6158" category="list-text">数据代理组需要 Internet 连接才能与 Cloud Sync 服务进行通信。</block>
   <block id="ad12207f179d2ca16295cab50ab877b3" category="list-text">如果您不直接从 NetApp 购买许可证，则需要一个 AWS 或 Azure 帐户才能为 PAYGO Cloud Sync 服务计费。</block>
   <block id="17381273051e35ee8b1f3c5cec92c55a" category="section-title">什么是数据代理组？</block>
@@ -1507,4 +1502,8 @@
   <block id="471d3dbea565333e7aac2e693d15e28e" category="paragraph">包含Azure Blob或与S3兼容的端点(S3、StorageGRID 或IBM云对象存储)作为目标的同步关系支持复制标记。</block>
   <block id="19656389ea4b802da6413eff0a250187" category="inline-link-macro">在创建同步关系时启用对象复制设置</block>
   <block id="89176f15cb099a09a71af33d00c1d7b5" category="paragraph">^1^ 对于这些同步关系，您需要 <block ref="a7dd81f666bee66d77494e96987d22b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="1a480358118349316f6eb18b57ab7ff1" category="paragraph">以下地区不支持Cloud Sync ：</block>
+  <block id="16bfbdd0b4d440a858cdccf55f911337" category="list-text">AWS政府区域</block>
+  <block id="580e905670d084cfe8e8e4ce2cd2899b" category="list-text">Azure政府区域</block>
+  <block id="ae54a5c026f31ada088992587d92cb3a" category="list-text">中国</block>
 </blocks>
