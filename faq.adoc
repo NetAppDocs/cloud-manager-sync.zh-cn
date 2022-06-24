@@ -124,8 +124,9 @@ link:reference-requirements.html["了解有关同步要求的更多信息。"]�
 * Intelligent-Hierarchy
 * 标准—不经常访问
 * 一个 ZONE 不常访问
-* 冰河
 * Glacier 深度存档
+* Glacier灵活检索
+* Glacier 即时检索
 
 
 

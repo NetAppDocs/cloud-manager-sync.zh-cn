@@ -757,7 +757,6 @@
   <block id="50abff7eab122064034a22ce7ec10c49" category="list-text">Intelligent-Hierarchy</block>
   <block id="7a1255ccd32375deedb79fe52eed93f5" category="list-text">标准—不经常访问</block>
   <block id="e2b0c2a0a664cef2184b3d17808db4ce" category="list-text">一个 ZONE 不常访问</block>
-  <block id="4def2a084469f97f6372bfaf0823941b" category="list-text">冰河</block>
   <block id="d2f79b4db321be04fd1439394fb99d3c" category="list-text">Glacier 深度存档</block>
   <block id="95e5c9b9a242ae01ebbab296e59e2a68" category="list-text">当 Google Cloud Storage 存储分段为目标时，您可以选择特定的存储类：</block>
   <block id="ffaf5cab0f09c40c02f73eeea249b6ce" category="summary">NetApp 无法访问您在使用 Cloud Sync 服务时提供的任何凭据。凭据直接存储在驻留在网络中的数据代理计算机上。</block>
@@ -1506,4 +1505,5 @@
   <block id="16bfbdd0b4d440a858cdccf55f911337" category="list-text">AWS政府区域</block>
   <block id="580e905670d084cfe8e8e4ce2cd2899b" category="list-text">Azure政府区域</block>
   <block id="ae54a5c026f31ada088992587d92cb3a" category="list-text">中国</block>
+  <block id="cbe97248e70516b3413b9658af8e4825" category="list-text">Glacier灵活检索</block>
 </blocks>

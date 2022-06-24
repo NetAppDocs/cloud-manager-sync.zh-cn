@@ -301,8 +301,9 @@ summary: 使用 Cloud Sync 可以将数据从源同步到目标。这称为同�
 ** Intelligent-Hierarchy
 ** 标准—不经常访问
 ** 一个 ZONE 不常访问
-** 冰河
 ** Glacier 深度存档
+** Glacier灵活检索
+** Glacier 即时检索
 
 
 . 当 Google Cloud Storage 存储分段为目标时，您可以选择特定的存储类：
