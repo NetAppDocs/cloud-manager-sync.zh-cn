@@ -49,6 +49,7 @@ Cloud Sync 支持以下存储类型：
 * 适用于 ONTAP 的 Amazon FSX
 * Amazon S3
 * Azure Blob
+* Azure Data Lake存储第2代
 * Azure NetApp Files
 * 框（可作为预览版使用）
 * Cloud Volumes Service

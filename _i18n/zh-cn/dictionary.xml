@@ -658,7 +658,6 @@
   <block id="9177317d32a41a0982be70109425240b" category="section-title">有关数据代理 VM 实例的详细信息</block>
   <block id="c233ea2db8aa00ac96e4e0317d97f7ed" category="paragraph">Cloud Sync 使用以下配置在 Google Cloud 中创建数据代理。</block>
   <block id="3ea4bf9da7622edeeae1bf80e9c5cded" category="list-text">计算机类型</block>
-  <block id="cc5a0182c13643bf47b7fb87ac22c232" category="list-text">N1-standard-4</block>
   <block id="9f101c0e6e5929a04c9e7663fdf91eda" category="list-text">15 GB</block>
   <block id="935b9daeec310c8e2291d043d3e14f44" category="list-text">Red Hat Enterprise Linux 7.7</block>
   <block id="f3796c63e27caa7881ad0844ee9e9544" category="list-text">标准配置 20 GB HDD PD</block>
@@ -1491,12 +1490,9 @@
   <block id="37e1492974d1c0a4febae33433a14d3f" category="list-text">在*标记/元数据*页面上、您可以指定要在复制到Azure Blob容器的对象上设置的Blob索引标记。以前、您只能指定关系元数据。</block>
   <block id="bb775e1249cce6f8004e5212d3f37d10" category="paragraph">如果Azure Blob是目标、而源是Azure Blob或与S3兼容的端点(S3、StorageGRID 或IBM云对象存储)、则支持这些选项。</block>
   <block id="6e272326d37ff30b30c39df1796c1047" category="list-text">持续同步</block>
-  <block id="8ed3a39cc9f2a70ec95bb16dd2f2fb23" category="list-text">初始数据同步后、Cloud Sync 将侦听源S3存储分段上的更改、并在发生更改时持续同步目标。无需按计划间隔重新扫描源。</block>
-  <block id="81e275e8d051ed5b97b6b40caeb6e335" category="paragraph">只有在创建同步关系以及从S3存储分段同步到S3、Google Cloud Storage、Azure Blob Storage、StorageGRID 或IBM存储时、此设置才可用。</block>
   <block id="2be3dcdda5218111239a3d0174add0a9" category="paragraph">如果启用此设置、则会影响以下其他功能：</block>
   <block id="cf6e8568cffe2257079f8cf83e628dad" category="list-text">同步计划已禁用。</block>
   <block id="ff156b37c42c21d99850e977fcdb1ebd" category="list-text">以下设置将还原为其默认值：Sync Timeout、Recently Modified Files和Date Modified。</block>
-  <block id="f60a1149c02808459c5643cc5df3f925" category="list-text">按大小筛选仅在复制事件(而不是删除事件)上处于活动状态。</block>
   <block id="06188761055a99a60d4ecac698ce5c29" category="list-text">创建此关系后、您只能加快或删除此关系。您不能中止同步、修改设置或查看报告。</block>
   <block id="471d3dbea565333e7aac2e693d15e28e" category="paragraph">包含Azure Blob或与S3兼容的端点(S3、StorageGRID 或IBM云对象存储)作为目标的同步关系支持复制标记。</block>
   <block id="19656389ea4b802da6413eff0a250187" category="inline-link-macro">在创建同步关系时启用对象复制设置</block>
@@ -1506,4 +1502,28 @@
   <block id="580e905670d084cfe8e8e4ce2cd2899b" category="list-text">Azure政府区域</block>
   <block id="ae54a5c026f31ada088992587d92cb3a" category="list-text">中国</block>
   <block id="cbe97248e70516b3413b9658af8e4825" category="list-text">Glacier灵活检索</block>
+  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
+  <block id="59db2d8d08645826b1c034be277c61d2" category="section-title">支持Azure Data Lake存储第2代</block>
+  <block id="c7b46a2bde58e21272436d4c94238e15" category="paragraph">现在、您可以将NFS服务器或SMB服务器中的数据同步到Azure Data Lake Storage Gen2。</block>
+  <block id="20a2ab980685308347c082aec3253ed9" category="paragraph">在创建包含Azure数据湖的同步关系时、您需要为Cloud Sync 提供存储帐户连接字符串。它必须是常规连接字符串、而不是共享访问签名(SAS)。</block>
+  <block id="ebf5fe0ded517668f74c4f41da278835" category="section-title">从Google Cloud Storage持续同步</block>
+  <block id="6ce39114bc116067ef30366e7df90870" category="paragraph">现在支持从源Google Cloud Storage存储分段到云存储目标的持续同步设置。</block>
+  <block id="fd36af2b64264c3f7fb77364a0046eb8" category="paragraph">初始数据同步后、Cloud Sync 将侦听源Google Cloud存储分段上的更改、并在发生更改时持续同步目标。从Google Cloud存储分段同步到S3、Google Cloud Storage、Azure Blob存储、StorageGRID 或IBM存储时、可以使用此设置。</block>
+  <block id="5f5f25c6813ee0b01f552cd13dcebec9" category="paragraph">要使用此设置、与数据代理关联的服务帐户需要以下权限：</block>
+  <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">全新Google Cloud区域支持</block>
+  <block id="d38ece9df5f99d11a5e7597c6f6c34f2" category="paragraph">Cloud Sync 数据代理现在在以下Google Cloud地区受支持：</block>
+  <block id="db760e7471192daa123eed31bfba312d" category="list-text">哥伦布(美国-东5)</block>
+  <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">达拉斯(美国-南1)</block>
+  <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">马德里(欧洲-西南1)</block>
+  <block id="4b14bbd178377e932c7e97664c276be7" category="list-text">米兰(欧洲-西部8)</block>
+  <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">巴黎(欧洲-西部9)</block>
+  <block id="66c941bf286fd505b009d484ca94a594" category="section-title">新的Google Cloud计算机类型</block>
+  <block id="32ddf7d830e3a5092074c4f9bb211736" category="paragraph">Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。</block>
+  <block id="80b8bec2e4ce95cb7a2f98a49ff8964c" category="list-text">初始数据同步后、Cloud Sync 会侦听源S3存储分段或Google Cloud存储分段上的更改、并在发生更改时持续同步目标。无需按计划间隔重新扫描源。</block>
+  <block id="f3705b49b8b44367d9a208662d64b1e0" category="paragraph">只有在创建同步关系以及从S3存储分段或Google云存储同步到S3、Google Cloud Storage、Azure Blob存储、StorageGRID 或IBM存储时、此设置才可用。</block>
+  <block id="ae067a0352a2b892590442ce8932ed20" category="list-text">如果S3为源、则按大小筛选仅在复制事件(而不是删除事件)上处于活动状态。</block>
+  <block id="218f5307b8ee8bb2d446b8572cd40e9f" category="list-text">Azure Data Lake存储第2代</block>
+  <block id="e83655905b13c4a3bc8d7de2a55ecea8" category="inline-link-macro">了解有关持续同步选项的更多信息</block>
+  <block id="3fb0e4028062069b21887e1408a76464" category="list-text">只有当您计划对从Google Cloud Storage到另一个云存储位置的同步关系启用持续同步设置时、才需要"pubsub.*"和"storage.bucests.update"权限。 <block ref="5354423db3737fe63814ca7ea57f2c4c" category="inline-link-macro-rx"></block>。</block>
+  <block id="88ba83f191bd27de24492d3f347d8add" category="list-text">n2-standard-4</block>
 </blocks>

@@ -139,6 +139,12 @@ image:screenshot_connection_string_sas.gif["显示共享访问签名，可通过
 
 
 
+== Azure Data Lake存储第2代
+
+在创建包含Azure数据湖的同步关系时、您需要为Cloud Sync 提供存储帐户连接字符串。它必须是常规连接字符串、而不是共享访问签名(SAS)。
+
+
+
 == Azure NetApp Files 要求
 
 在与 Azure NetApp Files 同步数据时，请使用高级或超高级服务级别。如果磁盘服务级别为标准，则可能会出现故障和性能问题。

@@ -67,9 +67,22 @@ summary: 创建新数据代理时，请选择 Google Cloud Data Broker 选项，
 - storage.buckets.list
 - storage.objects.*
 - iam.serviceAccounts.signJwt
+- pubsub.subscriptions.consume
+- pubsub.subscriptions.create
+- pubsub.subscriptions.delete
+- pubsub.subscriptions.list
+- pubsub.topics.attachSubscription
+- pubsub.topics.create
+- pubsub.topics.delete
+- pubsub.topics.list
+- pubsub.topics.setIamPolicy
+- storage.buckets.update
 ----
+注释：
 
-NOTE: 只有在计划设置数据代理以使用外部 HashiCorp 存储时，才需要 iam.serviceAccounts.signJwt" 权限。
+. 只有在计划设置数据代理以使用外部 HashiCorp 存储时，才需要 iam.serviceAccounts.signJwt" 权限。
+. 只有当您计划对从Google Cloud Storage到另一个云存储位置的同步关系启用持续同步设置时、才需要"pubsub.*"和"storage.bucests.update"权限。 link:task-creating-relationships.html#settings["了解有关持续同步选项的更多信息"]。
+
 
 
 
@@ -136,7 +149,7 @@ image:screenshot_data_broker_gcp.png["屏幕截图显示了在 Google Cloud 中�
 
 Cloud Sync 使用以下配置在 Google Cloud 中创建数据代理。
 
-计算机类型:: N1-standard-4
+计算机类型:: n2-standard-4
 vCPU:: 4.
 RAM:: 15 GB
 操作系统:: Red Hat Enterprise Linux 7.7
