@@ -755,7 +755,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 08:18:52 +0000">04/18/2022</time>
+    <time datetime="2022-07-03 15:43:36 +0000">07/03/2022</time>
     
   
 
@@ -832,20 +832,31 @@
 - storage.buckets.get
 - storage.buckets.list
 - storage.objects.*
-- iam.serviceAccounts.signJwt</code></pre>
+- iam.serviceAccounts.signJwt
+- pubsub.subscriptions.consume
+- pubsub.subscriptions.create
+- pubsub.subscriptions.delete
+- pubsub.subscriptions.list
+- pubsub.topics.attachSubscription
+- pubsub.topics.create
+- pubsub.topics.delete
+- pubsub.topics.list
+- pubsub.topics.setIamPolicy
+- storage.buckets.update</code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-sync/images/note.svg" alt="注">
-</td>
-<td class="content">
-只有在计划设置数据代理以使用外部 HashiCorp 存储时，才需要 iam.serviceAccounts.signJwt" 权限。
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>注释：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>只有在计划设置数据代理以使用外部 HashiCorp 存储时，才需要 iam.serviceAccounts.signJwt" 权限。</p>
+</li>
+<li>
+<p>只有当您计划对从Google Cloud Storage到另一个云存储位置的同步关系启用持续同步设置时、才需要"pubsub.*"和"storage.bucests.update"权限。 <a href="task-creating-relationships.html#settings">"了解有关持续同步选项的更多信息"</a>。</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -960,7 +971,7 @@
 <dl>
 <dt class="hdlist1">计算机类型</dt>
 <dd>
-<p>N1-standard-4</p>
+<p>n2-standard-4</p>
 </dd>
 <dt class="hdlist1">vCPU</dt>
 <dd>
